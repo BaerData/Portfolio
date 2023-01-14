@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
 @-webkit-keyframes borderOf {
   0% {
-    outline: 1px double #313131;
+    outline: 1px double #ff0062;
   }
   50% {
     outline: 7px double #313131;
   }
   100% {
-    outline: 2px double #313131;
+    outline: 1px double #313131;
   }
 }
 @keyframes borderOf {
   0% {
-    outline: 1px double #313131;
+    outline: 1px double #ff0062;
   }
   50% {
     outline: 7px double #313131;
   }
   100% {
-    outline: 2px double #313131;
+    outline: 1px double #313131;
   }
 }
 @-webkit-keyframes alert {
@@ -203,7 +203,7 @@
     opacity: 1;
   }
   55% {
-    transform: skew(30deg, 21deg);
+    transform: skew(5deg, 21deg);
     opacity: 1.75;
   }
   50% {
@@ -257,7 +257,7 @@
     opacity: 1;
   }
   55% {
-    transform: skew(30deg, 21deg);
+    transform: skew(5deg, 21deg);
     opacity: 1.75;
   }
   50% {
@@ -337,7 +337,7 @@
   margin: 0 auto;
   height: 110vh;
   align-items: center;
-  background: #0e0e0e;
+  background: rgba(14, 14, 14, 0.2745098039);
   z-index: 1000;
   justify-content: center;
   width: 10vw;
@@ -412,6 +412,11 @@
 }
 
 .home {
+  background-image: url("../Img/bkGlitch.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -459,7 +464,7 @@
 }
 .home .home-subtitle .letterNeon:hover {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(85, 85, 85, 0.5058823529);
+  -webkit-text-stroke-color: #131313;
   -webkit-animation: letterNeon2 1s forwards;
           animation: letterNeon2 1s forwards;
 }
@@ -475,19 +480,15 @@
   margin: 30px;
   transition: 0.5s;
   cursor: pointer;
-  -webkit-animation: borderOf 1s;
-          animation: borderOf 1s;
-  -webkit-animation-duration: border ease 1.5s infinite;
-          animation-duration: border ease 1.5s infinite;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  font-weight: 300;
+  -webkit-animation: borderOf 1s ease 1.5s infinite;
+          animation: borderOf 1s ease 1.5s infinite;
+  font-weight: 400;
   font-size: 1.5rem;
   width: 105px;
   height: 55px;
   border: none;
   background: #111111;
-  color: white;
+  color: #f7f7f7;
   text-align: center;
   cursor: pointer;
 }
@@ -1036,27 +1037,25 @@
   flex-direction: column;
 }
 .contact .contact-container .contact-title .title {
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 900;
   color: #FEF504;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #0e0e0e;
+  text-shadow: 1px 4px 1px #00FFD2;
 }
-.contact .contact-container .contact-title h2 {
-  background-color: #FEF504;
-  font-size: 6rem;
-  font-weight: 900;
-  color: #0e0e0e;
-  line-height: 80px;
+.contact .contact-container .contact-title .title-contato {
+  width: 65%;
 }
 .contact .contact-container .contact-title h3 {
   font-size: 2rem;
   font-weight: 900;
-  color: #00FFD2;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ff0062;
+  color: #FEF504;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0e0e0e;
+  text-shadow: 1px 4px 1px #ff0062;
   padding: 6px;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 .contact .contact-container .contact-title i {
   margin-right: 6px;

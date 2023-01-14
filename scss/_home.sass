@@ -4,7 +4,7 @@
 
 
 .home
-
+    @include mixins.bg-img('bkGlitch.jpg')
     display: flex
     flex-direction: column
     align-items: center
@@ -25,6 +25,8 @@
           font-size: 4rem
        .letterNeon
           color: variables.$fundo-color
+          // color: variables.$yellow-cyberpunk
+          // text-shadow: 1px 10px 1px #00FFD2
           
           &:hover
             animation: letterNeon 1s forwards
@@ -46,7 +48,7 @@
         color: variables.$pink2-cyberpunk
         &:hover
           -webkit-text-stroke-width: 1px
-          -webkit-text-stroke-color: #55555581
+          -webkit-text-stroke-color: #131313
           @include mixins.letterNeon 
 
 
@@ -62,9 +64,8 @@
       margin: 30px
       transition: .5s
       cursor: pointer
-      animation: borderOf 1s
-      animation-duration: border ease 1.5s infinite 
-      animation-iteration-count:  infinite
+      animation: borderOf 1s ease 1.5s infinite 
+      
       
         
       @include mixins.btn
