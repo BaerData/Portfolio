@@ -1,0 +1,74 @@
+@use 'variables'
+
+@mixin container
+  
+  width: 10vw
+  margin: 0 auto
+
+@mixin flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin flex-column
+  display: flex
+  flex-direction: column
+
+
+@mixin page
+  width: 100%
+  height: 100vh
+  
+@mixin title
+  font-size: 4rem
+  font-weight: bold
+  color: #6d6d6d
+  
+@mixin btn
+  font-weight: 300
+  font-size: 1.5rem
+  width: 105px
+  height: 55px 
+  border: none
+  background: variables.$bg-dark-mode
+  color: white
+  text-align: center
+  cursor: pointer
+
+
+@mixin bg-img($img)
+  background-image: url('../Img/#{$img}')
+  background-size: 100%
+  background-position: center
+  background-repeat: no-repeat
+  transition: .6s
+  
+@mixin nameCard
+  content: ''
+  letter-spacing: 0.1em
+  position: absolute
+  bottom: 8px
+  left: 25px
+  color: #f9fdfc
+  font-size: 0.8em
+  font-weight: bold
+  background-color: variables.$pink2-cyberpunk
+  padding: 10px
+  animation: glitch1 1s infinite
+  --curve-size: .4em
+  --border-width: .125em
+  clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+  
+
+$small: 688px
+$medio: 992px
+$large: 1312px
+
+@mixin mobile
+  @media (max-width: $small)
+    @content
+
+			
+
+    
+    

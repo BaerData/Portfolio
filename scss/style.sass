@@ -1,0 +1,59 @@
+@use 'variables'
+@use 'fonts'
+@use 'mixins'
+@use 'keyframes'
+@use 'header'
+@use 'home'
+@use 'about'
+@use 'project'
+@use 'contact'
+
+
+
+
+* 
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Kanit', sans-serif
+  text-decoration: none
+
+  &::selection
+    background-color: variables.$pink2-cyberpunk
+    color: variables.$cyan-cyberpunk
+
+html,
+body 
+  background-color: variables.$bg-dark-mode
+  
+  color: variables.$title-color
+  scroll-behavior: smooth
+  @include mixins.page
+  &::-webkit-scrollbar
+    width: 2px 
+  &::-webkit-scrollbar-thumb 
+    background: variables.$text-color-h1
+    border-radius: 20px
+  a
+    color: variables.$secondary-color
+    text-decoration: none
+    transition: .4s
+  ul
+    list-style: none
+  span
+    color: variables.$text-color-h1
+         
+// conteudo princiapal
+.main
+  justify-content: center
+  transition: 1s
+  background-color: variables.$fundo-color
+  
+ 
+  
+    
+    
+
+  
+
+  

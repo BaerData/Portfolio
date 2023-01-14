@@ -1,0 +1,93 @@
+@use 'variables'
+@use 'mixins'
+
+.contact
+    @include mixins.flex-center
+    @include mixins.page
+    background: variables.$yellow-cyberpunk
+    @include mixins.mobile
+      height: 250vh 
+                
+              
+    .contact-container
+      display: flex
+      flex-direction: row
+      align-items: center  
+      gap: 30px
+      
+      .contact-title
+        @include mixins.flex-column
+        .title
+          font-size: 3.4rem
+          font-weight: 900
+          color: variables.$yellow-cyberpunk
+          -webkit-text-stroke-width: 1px
+          -webkit-text-stroke-color: #0e0e0e
+          
+          
+        h2
+          background-color: variables.$yellow-cyberpunk
+          font-size: 6rem
+          font-weight: 900
+          color: variables.$card-color
+          line-height: 80px
+
+        h3
+          font-size: 2rem
+          font-weight: 900
+          color: variables.$cyan-cyberpunk  
+          background-color: variables.$pink2-cyberpunk
+          padding: 6px
+          margin-top: 10px
+
+        i
+          margin-right: 6px
+          font-size: 1.8rem
+           
+  
+      .contact-form, form
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 35px
+        gap: 10px 
+        background: variables.$pink2-cyberpunk
+        border: 1px solid variables.$cyan-cyberpunk
+        justify-items: start
+        animation: glitch2 3s infinite, alertBackground 3s infinite
+        
+        &:hover
+          animation: none
+        
+        form [type="submit"]
+          background: variables.$yellow-cyberpunk
+          border: 1px solid #fcfc0300
+          font-weight: 500
+          color: variables.$title-color
+          --curve-size: .6em
+          --border-width: .125em
+          clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+          &:hover
+            background: variables.$buttom-bg
+            color: variables.$yellow-cyberpunk
+            font-weight: 500
+            border: 1px solid #FCFB03
+
+  
+        input
+          width: 13rem
+          padding: 10px
+          font-size: 1em
+          border: none
+          background-color: variables.$cyan-cyberpunk
+          box-sizing: border-box
+          padding-block: 0.7em
+          color: variables.$fundo-color
+          
+          &::placeholder 
+            background: variables.$cyan-glass-cyberpunk
+            border: 1px solid variables.$cyan-cyberpunk
+            padding: 10px
+            border-radius: none
+            font-size: 14px
+            color: variables.$fundo-color

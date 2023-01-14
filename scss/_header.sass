@@ -1,0 +1,78 @@
+@use 'variables'
+@use 'mixins'
+
+
+.header
+  flex-direction: column
+  display: flex
+  position: fixed
+  padding: 1.5rem 0
+  margin: 0 auto
+  height: 110vh
+  align-items: center
+  // background: variables.$bg-dark-mode - dark mode
+  background: variables.$fundo-color
+  z-index: 1000
+ 
+  
+  justify-content: center
+  @include mixins.container
+
+  @include mixins.mobile
+    position: fixed
+    display: flex
+    width: 100vw
+    height: 75px
+    bottom: 0px
+    background: variables.$fundo-color
+
+  &-brand // .header-brand
+    position: absolute
+    top: 20px
+    color: variables.$cyan-cyberpunk
+    padding: 30px 20px
+    // color: variables.$text-color-dark - dark mode
+    font-weight: 400
+    font-family: "PT Sans" sans-serif
+    font-size: 1.5rem
+    border: 2px solid variables.$cyan-cyberpunk
+    background: linear-gradient(180deg, rgba(0, 54, 56, 0.66) 0%, rgba(0, 54, 56, 0.12) 100%)
+    
+    @include mixins.mobile
+      display: none
+      font-size: 2rem
+      padding: 10px 20px
+      
+    &:hover
+      background: variables.$alert-cyberpunk
+      border: 2px solid variables.$pink2-cyberpunk
+      text-decoration: line-through
+      color: variables.$pink2-cyberpunk
+      animation: alert 2s infinite
+
+  &-navbar // .header-navbar
+    ul
+      height: 100%
+      flex-direction: column
+      border: 2px solid variables.$cyan-cyberpunk
+      background: linear-gradient(180deg, rgba(0, 54, 56, 0.66) 0%, rgba(0, 54, 56, 0.12) 100%)
+      padding: 3rem 10px
+      @include mixins.flex-center
+      @include mixins.mobile
+        flex-direction: row
+        
+      li 
+        margin: 2rem
+        font-size: 1.1rem
+
+        i
+          cursor: pointer
+          transition: .8s
+          color: variables.$cyan-cyberpunk
+          &:hover
+            transform: scale(1.140)  
+            transition: .4s
+            color: variables.$pink2-cyberpunk
+            text-decoration-line: line-through
+
+          

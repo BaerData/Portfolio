@@ -1,0 +1,134 @@
+@use 'variables'
+@use 'mixins'
+
+.about
+    @include mixins.flex-center
+    @include mixins.page
+    @include mixins.mobile
+      height: 100vh
+
+    .about-container
+      @include mixins.flex-center
+      gap: 5%
+
+      @include mixins.mobile
+        display: grid
+        grid-template-columns: 2fr 
+        grid-template-rows: 1fr
+
+          
+
+      .about-content
+        @include mixins.flex-center
+        flex-direction: row
+        background: variables.$yellow-cyberpunk
+        border: 1px solid variables.$cyan-cyberpunk
+        width: 45vw
+        padding: 5pc
+        gap: 5rem
+
+        @include mixins.mobile
+          width: 81vw
+          display: flex
+          flex-direction: column
+          
+          
+        
+
+        .title-page
+          font-style: italic
+          font-size: 3rem
+          color: variables.$title-color 
+
+        .about-btn
+          display: flex
+          align-items: flex-end
+          flex-direction: column
+          gap: 18px
+
+          .paragraph-page
+            font-size: 1rem
+            font-weight: 500
+            color: black
+            text-align: justify
+            
+
+
+          .btn-cv
+            background: variables.$buttom-bg
+            color: variables.$buttom-letter-color
+            border: 1px solid black
+            padding: 10px
+            font-size: 14px
+            font-weight: 500
+            --curve-size: .4em
+            --border-width: .125em
+            clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+            
+
+            &:hover
+              background: variables.$pink2-cyberpunk
+              color: variables.$buttom-letter-color
+              border: 1px solid variables.$cyan-cyberpunk
+              font-weight: 500
+              
+          
+          .about-socials
+            display: flex
+            align-items: center
+            flex-direction: row-reverse
+            gap: 10px
+
+            i
+              color: black
+              font-size: 17px
+              padding: 10px
+              border: 1px solid black
+              border-radius: 100%
+
+              &:hover
+                background: variables.$pink2-cyberpunk
+                color: variables.$buttom-letter-color
+                border: 1px solid variables.$cyan-cyberpunk
+
+      .about-tools
+        display: flex
+        align-items: center
+        flex-direction: row-reverse
+        gap: 1px
+        @include mixins.mobile
+          
+        
+        
+        .title-page-tools
+          text-align: start
+          font-size: 4rem
+          rotate: 90deg
+          text-decoration: line-through 4px solid variables.$pink2-cyberpunk
+          color: variables.$cyan-cyberpunk
+          
+
+          @include mixins.mobile
+            font-size: 3rem
+            
+
+      .about-tools-card
+        display: grid
+        grid-template-columns: 1fr 1fr 
+        grid-template-rows: 1fr
+        gap: 5px
+        
+        .tools
+          display: flex
+          justify-content: center
+          background: variables.$card-color
+          border: 1px solid variables.$cyan-cyberpunk
+          padding: 25px 40px
+          font-size: 1.4rem
+          color: variables.$cyan-cyberpunk
+          background: linear-gradient(180deg, rgba(0, 54, 56, 0.66) 0%, rgba(0, 54, 56, 0.12) 100%)
+
+          &:hover
+            background: linear-gradient(180deg, rgba(0, 54, 56, 0.911) 0%, rgba(0, 54, 56, 0.411) 100%)
+            color: variables.$pink2-cyberpunk
+            

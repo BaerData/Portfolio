@@ -1,0 +1,165 @@
+@use 'variables'
+@use 'mixins'
+
+.project
+    @include mixins.flex-center
+    @include mixins.page
+    @include mixins.mobile
+      height: 250vh
+          
+    .project-container
+      display: flex
+      
+
+      .project-content
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 
+        gap: 8px
+
+        @include mixins.mobile
+          display: grid
+          grid-template-columns: 1fr
+
+        .project-title
+          
+          display: flex
+          align-items: center
+          justify-content: center
+          background-color: #9703261e
+          border: 2px outset variables.$pink2-cyberpunk
+          height: 60px
+          gap: 15px
+          --curve-size: 1.5em
+          clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+          
+
+          @include mixins.mobile
+            display: flex
+            justify-content: center
+          
+          .title
+            text-align: center
+            margin: 10px
+            font-size: 1.7rem
+            letter-spacing: 0.2em
+            font-family: 'PT Sans' sans-serif
+            font-weight: 700
+            color: variables.$pink2-cyberpunk
+            animation: glitch1 1s infinite
+            @include mixins.mobile
+              font-size: 3rem
+
+
+          i
+            font-size: 30px
+            color: variables.$pink2-cyberpunk
+            animation: alert 1.4s infinite  
+            
+
+        .project-card
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: flex-end
+          width: 20rem
+          height: 10rem
+          cursor: pointer
+          filter: brightness(130%) contrast(180%)
+
+          &:hover
+            filter: none
+            transition: .1s
+            scale: (1.033)  
+               
+          
+          &:nth-child(3)
+            
+            @include mixins.bg-img('baerLogoGlass.png')
+            
+            &:hover
+              @include mixins.bg-img('tumb1.png')
+              &::before
+                @include mixins.nameCard
+                content: 'Baer Garage Detail'
+            
+     
+          &:nth-child(4)
+            @include mixins.bg-img('cakeGlass.png')
+            &:hover
+              @include mixins.bg-img('cupcake.png')
+              &::before
+                @include mixins.nameCard
+                content: 'Confeitaria Cupcake'
+
+          &:nth-child(5)
+            @include mixins.bg-img('steakGlass.png')
+            &:hover
+              @include mixins.bg-img('steakTumb.png')
+              &::before
+                @include mixins.nameCard
+                content: 'SteakBurguer'
+
+          &:nth-child(6)
+            @include mixins.bg-img('marionGlass.png')
+            &:hover
+              @include mixins.bg-img('marioTumb.png')
+              &::before
+                @include mixins.nameCard
+                content: 'Mario Jump'
+
+          &:nth-child(7)
+            @include mixins.bg-img('todoGlass.png')
+            &:hover
+              @include mixins.bg-img('todoTumb.png')
+              &::before
+                @include mixins.nameCard
+                content: 'To Do List'
+
+          &:nth-child(8)
+            @include mixins.bg-img('senhaGlass.png')
+            &:hover
+              @include mixins.bg-img('senha.png')
+              &::before
+                @include mixins.nameCard
+                content: 'Gerador de Senhas'
+
+          &:nth-child(9)
+            @include mixins.bg-img('checkGlass.png')
+            &:hover
+              @include mixins.bg-img('checkyellow.png')
+              &::before
+                @include mixins.nameCard
+                content: 'Check List - CRUD'
+
+          &:nth-child(10)
+            @include mixins.bg-img('powerGlass.png')
+            &:hover
+              @include mixins.bg-img('powerbi.png')
+              &::before
+                @include mixins.nameCard
+                content: 'Dashboards Microsoft Power'
+
+          .link-project
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center            
+            background: rgb(5 255 226 / 0%)
+            width: 2.5rem
+            height: 15rem
+            
+            i
+              color: variables.$title-color
+              font-size: 1.2rem
+              padding: 5px
+              margin-top: 10px
+              border: 1px solid variables.$title-color
+              border-radius: 100%
+              
+              
+              &:hover
+                background: variables.$pink2-cyberpunk
+                border: 1px solid variables.$cyan-cyberpunk
+                color: variables.$buttom-letter-color
+                 
