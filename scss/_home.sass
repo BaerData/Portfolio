@@ -19,22 +19,35 @@
        -webkit-text-stroke-width: 1px
        -webkit-text-stroke-color: #555555
        font-weight: 700 
-       
+       cursor: pointer
+       transition: ease 1s
        @include mixins.mobile
           font-size: 4rem
-       
+       .letterNeon
+          color: variables.$fundo-color
+          
+          &:hover
+            animation: letterNeon 1s forwards
+            
     
     .home-subtitle
        font-size: 3rem
        cursor: pointer
-       color: variables.$pink2-cyberpunk
-       font-weight: 500
+       
+       font-weight: 600
        font-style: italic
+       font-family: 'Kanit', sans-serif
        
        @include mixins.mobile
           font-size: 2rem
        
+       .letterNeon
         
+        color: variables.$pink2-cyberpunk
+        &:hover
+          -webkit-text-stroke-width: 1px
+          -webkit-text-stroke-color: #55555581
+          @include mixins.letterNeon 
 
 
     .text

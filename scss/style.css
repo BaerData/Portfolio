@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
 @-webkit-keyframes borderOf {
   0% {
     outline: 1px double #313131;
@@ -284,6 +281,54 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes letterNeon {
+  0% {
+    color: #FEF504;
+    text-shadow: 1px 10px 1px #00FFD2;
+  }
+  100% {
+    color: #FEF504;
+    opacity: 2;
+    transition: ease 1s;
+    text-shadow: 1px 10px 1px #00FFD2;
+  }
+}
+@keyframes letterNeon {
+  0% {
+    color: #FEF504;
+    text-shadow: 1px 10px 1px #00FFD2;
+  }
+  100% {
+    color: #FEF504;
+    opacity: 2;
+    transition: ease 1s;
+    text-shadow: 1px 10px 1px #00FFD2;
+  }
+}
+@-webkit-keyframes letterNeon2 {
+  0% {
+    color: #FEF504;
+    text-shadow: 1px 4px 1px #00FFD2;
+  }
+  100% {
+    color: #FEF504;
+    opacity: 2;
+    transition: ease 1s;
+    text-shadow: 1px 4px 1px #00FFD2;
+  }
+}
+@keyframes letterNeon2 {
+  0% {
+    color: #FEF504;
+    text-shadow: 1px 4px 1px #00FFD2;
+  }
+  100% {
+    color: #FEF504;
+    opacity: 2;
+    transition: ease 1s;
+    text-shadow: 1px 4px 1px #00FFD2;
+  }
+}
 .header {
   flex-direction: column;
   display: flex;
@@ -382,23 +427,41 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #555555;
   font-weight: 700;
+  cursor: pointer;
+  transition: ease 1s;
 }
 @media (max-width: 688px) {
   .home .home-title {
     font-size: 4rem;
   }
 }
+.home .home-title .letterNeon {
+  color: #0e0e0e;
+}
+.home .home-title .letterNeon:hover {
+  -webkit-animation: letterNeon 1s forwards;
+          animation: letterNeon 1s forwards;
+}
 .home .home-subtitle {
   font-size: 3rem;
   cursor: pointer;
-  color: #ff0062;
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
+  font-family: "Kanit", sans-serif;
 }
 @media (max-width: 688px) {
   .home .home-subtitle {
     font-size: 2rem;
   }
+}
+.home .home-subtitle .letterNeon {
+  color: #ff0062;
+}
+.home .home-subtitle .letterNeon:hover {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(85, 85, 85, 0.5058823529);
+  -webkit-animation: letterNeon2 1s forwards;
+          animation: letterNeon2 1s forwards;
 }
 .home .text {
   color: #00FFD2;
@@ -473,8 +536,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: #FCEE0A;
-  border: 1px solid #00FFD2;
+  background: #FEF504;
+  border: 1px solid #242424;
+  box-shadow: 10px 10px 1px #00FFD2;
   width: 45vw;
   padding: 5pc;
   gap: 5rem;
@@ -535,8 +599,8 @@
   border-radius: 100%;
 }
 .about .about-container .about-content .about-btn .about-socials i:hover {
-  background: #ff0062;
-  color: #f7f7f7;
+  background: rgba(5, 255, 226, 0.3137254902);
+  color: #ff0062;
   border: 1px solid #00FFD2;
 }
 .about .about-container .about-tools {
@@ -954,7 +1018,7 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: #FCEE0A;
+  background: #FEF504;
 }
 @media (max-width: 688px) {
   .contact {
@@ -974,12 +1038,12 @@
 .contact .contact-container .contact-title .title {
   font-size: 3.4rem;
   font-weight: 900;
-  color: #FCEE0A;
+  color: #FEF504;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #0e0e0e;
 }
 .contact .contact-container .contact-title h2 {
-  background-color: #FCEE0A;
+  background-color: #FEF504;
   font-size: 6rem;
   font-weight: 900;
   color: #0e0e0e;
@@ -989,7 +1053,8 @@
   font-size: 2rem;
   font-weight: 900;
   color: #00FFD2;
-  background-color: #ff0062;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff0062;
   padding: 6px;
   margin-top: 10px;
 }
@@ -1014,7 +1079,7 @@
           animation: none;
 }
 .contact .contact-container .contact-form form [type=submit], .contact .contact-container form form [type=submit] {
-  background: #FCEE0A;
+  background: #FEF504;
   border: 1px solid rgba(252, 252, 3, 0);
   font-weight: 500;
   color: #313131;
@@ -1025,7 +1090,7 @@
 }
 .contact .contact-container .contact-form form [type=submit]:hover, .contact .contact-container form form [type=submit]:hover {
   background: #0c0c0c;
-  color: #FCEE0A;
+  color: #FEF504;
   font-weight: 500;
   border: 1px solid #FCFB03;
 }
@@ -1083,7 +1148,6 @@
 html,
 body {
   background-color: #111111;
-  color: #313131;
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;

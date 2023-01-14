@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'keyframes'
 
 @mixin container
   
@@ -58,6 +59,9 @@
   --curve-size: .4em
   --border-width: .125em
   clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+  
+@mixin letterNeon
+  animation: letterNeon2 1s forwards
   
 
 $small: 688px
