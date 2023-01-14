@@ -26,7 +26,7 @@
   color: #6d6d6d
   
 @mixin btn
-  font-weight: 400
+  font-weight: 300
   font-size: 1.5rem
   width: 105px
   height: 55px 
@@ -42,6 +42,14 @@
   background-size: 100%
   background-position: center
   background-repeat: no-repeat
+  transition: .6s
+
+@mixin bg-img-fixed($img)
+  background-image: url('../Img/#{$img}')
+  background-size: 100%
+  background-position: center
+  background-repeat: no-repeat
+  background-attachment: fixed
   transition: .6s
   
 @mixin nameCard

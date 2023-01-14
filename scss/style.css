@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 @-webkit-keyframes borderOf {
   0% {
     outline: 1px double #ff0062;
@@ -337,7 +338,7 @@
   margin: 0 auto;
   height: 110vh;
   align-items: center;
-  background: rgba(14, 14, 14, 0.2745098039);
+  background: #0e0e0e;
   z-index: 1000;
   justify-content: center;
   width: 10vw;
@@ -412,11 +413,6 @@
 }
 
 .home {
-  background-image: url("../Img/bkGlitch.jpg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -482,7 +478,7 @@
   cursor: pointer;
   -webkit-animation: borderOf 1s ease 1.5s infinite;
           animation: borderOf 1s ease 1.5s infinite;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.5rem;
   width: 105px;
   height: 55px;
@@ -497,8 +493,8 @@
   transition: 0.2s;
   background: rgba(255, 0, 119, 0.2941176471);
   color: #ff0062;
-  font-weight: 400;
-  border: 1px inset #ff0062;
+  font-weight: 300;
+  border: 2px inset #ff0062;
   -webkit-animation: alert 1s infinite;
           animation: alert 1s infinite;
   --curve-size: .6em;
@@ -1157,7 +1153,7 @@ body::-webkit-scrollbar {
 }
 html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
-  background: #FFFF10;
+  background: #ff0062;
   border-radius: 20px;
 }
 html a,
