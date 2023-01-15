@@ -43,51 +43,56 @@
           color: variables.$pink2-cyberpunk
            
   
-      .contact-form, form
-        display: flex
-        flex-direction: column
-        align-items: center
-        padding: 35px
-        gap: 10px 
-        background: variables.$pink2-cyberpunk 
-        border: 3px solid variables.$cyan-cyberpunk
-        justify-items: start
-        animation: glitch2 3s infinite
+      .contact-form
+        form
+          display: flex
+          flex-direction: column
+          align-items: center
+          padding: 55px
+          gap: 10px 
+          background: variables.$border-color
+          border: 3px solid variables.$cyan-cyberpunk
+          justify-items: start
+          animation: glitch1 3s infinite
+          
         
-        &:hover
-          animation: none
+          &:hover
+            animation: none
         
         form [type="submit"]
-          background: variables.$yellow-cyberpunk
+          background: variables.$cyan-cyberpunk
           border: 1px solid #fcfc0300
           font-weight: 500
           color: variables.$title-color
           --curve-size: .6em
           --border-width: .125em
-          clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+          clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0, 100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size))   100%,0 100%)
           &:hover
-            background: variables.$buttom-bg
-            color: variables.$yellow-cyberpunk
+            background: variables.$cyan-glass-cyberpunk
+            color: variables.$cyan-cyberpunk
             font-weight: 500
-            border: 1px solid #FCFB03
+            border: 1px solid variables.$cyan-cyberpunk
 
   
         input
           width: 13rem
-          padding: 10px
+          height: 50px
           font-size: 1em
-          border: none
-          background-color: variables.$cyan-cyberpunk
-          box-sizing: border-box
-          padding-block: 0.7em
-          color: variables.$fundo-color
+          background: variables.$border-color
+          border: 1px solid variables.$cyan-cyberpunk
+          --curve-size: .6em
+          padding: 10px
+          clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0, 100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size))   100%,0 100%)
+          color: variables.$cyan-cyberpunk
+          text-shadow: 1px 1px 6px variables.$cyan-cyberpunk
           
           &::placeholder 
-            background: variables.$cyan-glass-cyberpunk
-            border: 1px solid variables.$cyan-cyberpunk
+            font-weight: 300
+            letter-spacing: 0.1em
             padding: 10px
             border-radius: none
             font-size: 14px
-            color: variables.$fundo-color
+            color: variables.$cyan-cyberpunk
+            text-shadow: 1px 1px 6px variables.$cyan-cyberpunk
 
     

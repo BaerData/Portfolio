@@ -12,20 +12,18 @@
     @include mixins.page
  
     .home-title
-       font-size: 9rem
+       font-size: 11rem
        font-style: italic
-       color: variables.$fundo-color
        -webkit-text-stroke-width: 1px
-       -webkit-text-stroke-color: #555555
+       -webkit-text-stroke-color: #3f3f3f
        font-weight: 900 
        cursor: pointer
        transition: ease 1s
        @include mixins.mobile
           font-size: 4rem
+       
        .letterNeon
           color: variables.$fundo-color
-          // color: variables.$yellow-cyberpunk
-          // text-shadow: 1px 10px 1px #00FFD2
           
           &:hover
             animation: letterNeon 1s forwards

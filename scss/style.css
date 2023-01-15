@@ -286,24 +286,32 @@
   0% {
     color: #FEF504;
     text-shadow: 1px 10px 1px #00FFD2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00ff6a;
   }
   100% {
     color: #FEF504;
     opacity: 2;
     transition: ease 1s;
     text-shadow: 1px 10px 1px #00FFD2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00ff6a;
   }
 }
 @keyframes letterNeon {
   0% {
     color: #FEF504;
     text-shadow: 1px 10px 1px #00FFD2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00ff6a;
   }
   100% {
     color: #FEF504;
     opacity: 2;
     transition: ease 1s;
     text-shadow: 1px 10px 1px #00FFD2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00ff6a;
   }
 }
 @-webkit-keyframes letterNeon2 {
@@ -427,11 +435,10 @@
   height: 100vh;
 }
 .home .home-title {
-  font-size: 9rem;
+  font-size: 11rem;
   font-style: italic;
-  color: #0e0e0e;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #555555;
+  -webkit-text-stroke-color: #3f3f3f;
   font-weight: 900;
   cursor: pointer;
   transition: ease 1s;
@@ -489,7 +496,7 @@
   width: 105px;
   height: 55px;
   border: none;
-  background: #111111;
+  background: #151515;
   color: #f7f7f7;
   text-align: center;
   cursor: pointer;
@@ -539,8 +546,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: #FEFF0C;
-  border: 1px solid #242424;
+  background: #FCEE0A;
+  border: 1px solid #00ff6a;
   box-shadow: 10px 10px 1px #00FFD2;
   width: 45vw;
   padding: 5pc;
@@ -1021,7 +1028,7 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: #FEFF0C;
+  background: #FCEE0A;
 }
 @media (max-width: 480px) {
   .contact {
@@ -1066,24 +1073,24 @@
   font-size: 1.8rem;
   color: #f10050;
 }
-.contact .contact-container .contact-form, .contact .contact-container form {
+.contact .contact-container .contact-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px;
+  padding: 55px;
   gap: 10px;
-  background: #f10050;
+  background: rgba(0, 0, 0, 0.7333333333);
   border: 3px solid #00FFD2;
   justify-items: start;
-  -webkit-animation: glitch2 3s infinite;
-          animation: glitch2 3s infinite;
+  -webkit-animation: glitch1 3s infinite;
+          animation: glitch1 3s infinite;
 }
-.contact .contact-container .contact-form:hover, .contact .contact-container form:hover {
+.contact .contact-container .contact-form form:hover {
   -webkit-animation: none;
           animation: none;
 }
-.contact .contact-container .contact-form form [type=submit], .contact .contact-container form form [type=submit] {
-  background: #FEFF0C;
+.contact .contact-container .contact-form form [type=submit] {
+  background: #00FFD2;
   border: 1px solid rgba(252, 252, 3, 0);
   font-weight: 500;
   color: #313131;
@@ -1092,45 +1099,51 @@
   -webkit-clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
           clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
 }
-.contact .contact-container .contact-form form [type=submit]:hover, .contact .contact-container form form [type=submit]:hover {
-  background: #0c0c0c;
-  color: #FEFF0C;
+.contact .contact-container .contact-form form [type=submit]:hover {
+  background: rgba(5, 255, 226, 0.3137254902);
+  color: #00FFD2;
   font-weight: 500;
-  border: 1px solid #FCFB03;
+  border: 1px solid #00FFD2;
 }
-.contact .contact-container .contact-form input, .contact .contact-container form input {
+.contact .contact-container .contact-form input {
   width: 13rem;
-  padding: 10px;
+  height: 50px;
   font-size: 1em;
-  border: none;
-  background-color: #00FFD2;
-  box-sizing: border-box;
-  padding-block: 0.7em;
-  color: #0e0e0e;
-}
-.contact .contact-container .contact-form input::-moz-placeholder, .contact .contact-container form input::-moz-placeholder {
-  background: rgba(5, 255, 226, 0.3137254902);
+  background: rgba(0, 0, 0, 0.7333333333);
   border: 1px solid #00FFD2;
+  --curve-size: .6em;
+  padding: 10px;
+  -webkit-clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
+          clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
+  color: #00FFD2;
+  text-shadow: 1px 1px 6px #00FFD2;
+}
+.contact .contact-container .contact-form input::-moz-placeholder {
+  font-weight: 300;
+  letter-spacing: 0.1em;
   padding: 10px;
   border-radius: none;
   font-size: 14px;
-  color: #0e0e0e;
+  color: #00FFD2;
+  text-shadow: 1px 1px 6px #00FFD2;
 }
-.contact .contact-container .contact-form input:-ms-input-placeholder, .contact .contact-container form input:-ms-input-placeholder {
-  background: rgba(5, 255, 226, 0.3137254902);
-  border: 1px solid #00FFD2;
+.contact .contact-container .contact-form input:-ms-input-placeholder {
+  font-weight: 300;
+  letter-spacing: 0.1em;
   padding: 10px;
   border-radius: none;
   font-size: 14px;
-  color: #0e0e0e;
+  color: #00FFD2;
+  text-shadow: 1px 1px 6px #00FFD2;
 }
-.contact .contact-container .contact-form input::placeholder, .contact .contact-container form input::placeholder {
-  background: rgba(5, 255, 226, 0.3137254902);
-  border: 1px solid #00FFD2;
+.contact .contact-container .contact-form input::placeholder {
+  font-weight: 300;
+  letter-spacing: 0.1em;
   padding: 10px;
   border-radius: none;
   font-size: 14px;
-  color: #0e0e0e;
+  color: #00FFD2;
+  text-shadow: 1px 1px 6px #00FFD2;
 }
 
 * {
@@ -1151,7 +1164,7 @@
 
 html,
 body {
-  background-color: #111111;
+  background-color: #151515;
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
@@ -1177,7 +1190,7 @@ body ul {
 }
 html span,
 body span {
-  color: #FFFF10;
+  color: #FCEE0A;
 }
 
 .main {
