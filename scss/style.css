@@ -358,12 +358,12 @@
   width: 10vw;
   margin: 0 auto;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .header {
     position: fixed;
     display: flex;
     width: 100vw;
-    height: 75px;
+    height: 99px;
     bottom: 0px;
     background: #0e0e0e;
   }
@@ -379,11 +379,9 @@
   border: 2px solid #00FFD2;
   background: linear-gradient(180deg, rgba(0, 54, 56, 0.66) 0%, rgba(0, 54, 56, 0.12) 100%);
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .header-brand {
     display: none;
-    font-size: 2rem;
-    padding: 10px 20px;
   }
 }
 .header-brand:hover {
@@ -404,9 +402,10 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .header-navbar ul {
     flex-direction: row;
+    padding: 1px;
   }
 }
 .header-navbar ul li {
@@ -443,7 +442,7 @@
   cursor: pointer;
   transition: ease 1s;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .home .home-title {
     font-size: 4rem;
   }
@@ -462,7 +461,7 @@
   font-style: italic;
   font-family: "Kanit", sans-serif;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .home .home-subtitle {
     font-size: 2rem;
   }
@@ -523,7 +522,7 @@
   width: 100%;
   height: 100vh;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .about {
     height: 100vh;
   }
@@ -534,7 +533,7 @@
   justify-content: center;
   gap: 5%;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .about .about-container {
     display: grid;
     grid-template-columns: 2fr;
@@ -553,7 +552,7 @@
   padding: 5pc;
   gap: 5rem;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .about .about-container .about-content {
     width: 81vw;
     display: flex;
@@ -627,7 +626,7 @@
           text-decoration: line-through 4px solid #f10050;
   color: #00FFD2;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .about .about-container .about-tools .title-page-tools {
     font-size: 3rem;
   }
@@ -660,7 +659,7 @@
   width: 100%;
   height: 100vh;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .project {
     height: 250vh;
   }
@@ -674,7 +673,7 @@
   grid-template-rows: 1fr;
   gap: 8px;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .project .project-container .project-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -692,7 +691,7 @@
   -webkit-clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
           clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .project .project-container .project-content .project-title {
     display: flex;
     justify-content: center;
@@ -709,7 +708,7 @@
   -webkit-animation: glitch1 1s infinite;
           animation: glitch1 1s infinite;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .project .project-container .project-content .project-title .title {
     font-size: 3rem;
   }
@@ -1030,7 +1029,7 @@
   height: 100vh;
   background: #FCEE0A;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .contact {
     height: 100vh;
     justify-content: center;
@@ -1043,14 +1042,20 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .contact .contact-container {
-    justify-content: center;
+    margin: 40px;
+    margin-bottom: 30%;
   }
 }
 .contact .contact-container .contact-title {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 375px) {
+  .contact .contact-container .contact-title {
+    gap: 20px;
+  }
 }
 .contact .contact-container .contact-title .title-contato {
   font-size: 5rem;
@@ -1058,12 +1063,17 @@
   color: #0c0c0c;
   line-height: 60px;
 }
+@media (min-width: 375px) {
+  .contact .contact-container .contact-title .title-contato {
+    font-size: 3.4rem;
+  }
+}
 .contact .contact-container .contact-title h3 {
   font-size: 2rem;
   font-weight: 700;
   color: #0c0c0c;
 }
-@media (max-width: 480px) {
+@media (min-width: 375px) {
   .contact .contact-container .contact-title h3 {
     font-size: 1rem;
   }
@@ -1072,6 +1082,11 @@
   margin-right: 6px;
   font-size: 1.8rem;
   color: #f10050;
+}
+@media (min-width: 375px) {
+  .contact .contact-container .contact-title i {
+    font-size: 20px;
+  }
 }
 .contact .contact-container .contact-form form {
   display: flex;
@@ -1177,6 +1192,11 @@ html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
   background: #f10050;
   border-radius: 20px;
+}
+html::-webkit-scrollbar:horizontal,
+body::-webkit-scrollbar:horizontal {
+  border-radius: 20px;
+  height: 2px;
 }
 html a,
 body a {

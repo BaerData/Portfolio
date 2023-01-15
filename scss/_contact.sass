@@ -17,17 +17,22 @@
       flex-wrap: wrap 
       gap: 30px
       @include mixins.mobile
-          justify-content: center
+          margin: 40px
+          margin-bottom: 30%
         
       .contact-title
         @include mixins.flex-column
+        @include mixins.mobile
+          gap: 20px
+         
         
         .title-contato
           font-size: 5rem
           font-weight: 900
           color: variables.$black-cyberpunk
           line-height: 60px
-        
+          @include mixins.mobile
+            font-size: 3.4rem
           
 
         h3
@@ -41,7 +46,8 @@
           margin-right: 6px
           font-size: 1.8rem
           color: variables.$pink2-cyberpunk
-           
+          @include mixins.mobile
+            font-size: 20px
   
       .contact-form
         form

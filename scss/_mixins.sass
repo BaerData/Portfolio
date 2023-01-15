@@ -72,12 +72,12 @@
   animation: letterNeon2 1s forwards
   
 
-$small: 480px
+$small: 375px
 $medio: 992px
 $large: 1312px
 
 @mixin mobile
-  @media (max-width: $small)
+  @media (min-width: $small)
     @content
 
 			
