@@ -3,7 +3,7 @@
 @keyframes borderOf
     0%
       
-      outline: 1px double variables.$pink2-cyberpunk
+      outline: 1px double variables.$title-color
       
        
     50%
@@ -118,7 +118,7 @@
   
   55% 
     transform: skew(5deg, 21deg)
-    opacity: 1.75
+    opacity: .3
   
   50% 
     transform: none
@@ -130,7 +130,7 @@
   
   75% 
     transform: skew(-10deg, -21deg)
-    opacity: 1.75
+    opacity: .3
   
   80% 
     transform: none
@@ -154,12 +154,15 @@
 
 @keyframes letterNeon2
   0%
-    color: variables.$yellow-cyberpunk
-    text-shadow: 1px 4px 1px #00FFD2
+    text-shadow: 0px 2px 54px variables.$pink2-cyberpunk
+    color: variables.$fundo-color
+    -webkit-text-stroke-width: 2px
+    -webkit-text-stroke-color: variables.$pink2-cyberpunk
   
   100%
-    color: variables.$yellow-cyberpunk
-    opacity: 2
     
+    color: variables.$fundo-color
+    -webkit-text-stroke-width: 2px
+    -webkit-text-stroke-color: variables.$pink2-cyberpunk
     transition: ease 1s
     text-shadow: 1px 4px 1px variables.$cyan-cyberpunk

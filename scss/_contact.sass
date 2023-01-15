@@ -6,45 +6,41 @@
     @include mixins.page
     background: variables.$yellow-cyberpunk
     @include mixins.mobile
-      height: 250vh 
+      height: 100vh 
+      justify-content: center
                 
               
     .contact-container
       display: flex
       flex-direction: row
-      align-items: center  
+      align-items: center 
+      flex-wrap: wrap 
       gap: 30px
-      
+      @include mixins.mobile
+          justify-content: center
+        
       .contact-title
         @include mixins.flex-column
-        .title
-          font-size: 3rem
-          font-weight: 900
-          color: variables.$yellow-cyberpunk
-          -webkit-text-stroke-width: 1px
-          -webkit-text-stroke-color: #0e0e0e
-          text-shadow: 1px 4px 1px #00FFD2
-          
+        
         .title-contato
-          width: 65%
-
+          font-size: 5rem
+          font-weight: 900
+          color: variables.$black-cyberpunk
+          line-height: 60px
+        
           
-            
 
         h3
           font-size: 2rem
-          font-weight: 900
-          color: variables.$yellow-cyberpunk  
-          
-          -webkit-text-stroke-width: 1px
-          -webkit-text-stroke-color: #0e0e0e
-          text-shadow: 1px 4px 1px variables.$pink2-cyberpunk
-          padding: 6px
-          margin-top: 4px
+          font-weight: 700
+          color: variables.$black-cyberpunk 
+          @include mixins.mobile
+            font-size: 1rem
 
         i
           margin-right: 6px
           font-size: 1.8rem
+          color: variables.$pink2-cyberpunk
            
   
       .contact-form, form
@@ -53,10 +49,10 @@
         align-items: center
         padding: 35px
         gap: 10px 
-        background: variables.$pink2-cyberpunk
-        border: 1px solid variables.$cyan-cyberpunk
+        background: variables.$pink2-cyberpunk 
+        border: 3px solid variables.$cyan-cyberpunk
         justify-items: start
-        animation: glitch2 3s infinite, alertBackground 3s infinite
+        animation: glitch2 3s infinite
         
         &:hover
           animation: none
@@ -93,3 +89,5 @@
             border-radius: none
             font-size: 14px
             color: variables.$fundo-color
+
+    
