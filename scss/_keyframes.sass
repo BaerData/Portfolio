@@ -3,16 +3,16 @@
 @keyframes borderOf
     0%
       
-      outline: 1px double variables.$title-color
+      outline: 1px double variables.$pink2-cyberpunk
       
        
     50%
       
-      outline: 7px double variables.$title-color    
+      outline: 7px double variables.$pink2-cyberpunk  
    
     100%
       
-      outline: 1px double variables.$title-color 
+      outline: 1px double variables.$pink2-cyberpunk
 
 @keyframes alert
   0%
@@ -142,19 +142,25 @@
  
 @keyframes letterNeon
   0%
-    color: #FEF504
-    text-shadow: 1px 10px 1px #00FFD2
+    color: variables.$yellow-cyberpunk
+    text-shadow: 1px 10px 1px variables.$cyan-cyberpunk
     -webkit-text-stroke-width: 1px
     -webkit-text-stroke-color: #00ff6a
   
-  100%
-    color: #FEF504
-    opacity: 2
-    
-    transition: ease 1s
-    text-shadow: 1px 10px 1px #00FFD2
+  20%
+    color: variables.$yellow-cyberpunk
+    opacity: 1
+    text-shadow: 1px 10px 1px variables.$cyan-cyberpunk
     -webkit-text-stroke-width: 1px
     -webkit-text-stroke-color: #00ff6a
+  100%
+    color: variables.$black-cyberpunk
+    opacity: 2
+    transition: ease 1s
+    -webkit-text-stroke-width: 1px
+    -webkit-text-stroke-color: #63FCFA
+    text-shadow: 1px 1px 1px  #63FCFA
+
 
 @keyframes letterNeon2
   0%
@@ -162,11 +168,7 @@
     color: variables.$fundo-color
     -webkit-text-stroke-width: 2px
     -webkit-text-stroke-color: variables.$pink2-cyberpunk
-  
   100%
-    
-    color: variables.$fundo-color
-    -webkit-text-stroke-width: 2px
-    -webkit-text-stroke-color: variables.$pink2-cyberpunk
+    color: variables.$red-glass-cyberpunk
     transition: ease 1s
-    text-shadow: 1px 4px 1px variables.$cyan-cyberpunk
+  

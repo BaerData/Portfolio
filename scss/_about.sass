@@ -22,24 +22,24 @@
         @include mixins.flex-center
         flex-direction: row
         background: variables.$yellow-cyberpunk
-        border: 1px solid variables.$green-cyberpunk
-        box-shadow: 10px 10px 1px variables.$cyan-cyberpunk
+        border: 1px solid variables.$yellow-dark-cyberpunk
+        box-shadow: 1px 1px 10px variables.$yellow-dark-cyberpunk
         width: 45vw
         padding: 5pc
         gap: 5rem
+        --curve-size: 2em
+        clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
 
         @include mixins.mobile
           width: 81vw
           display: flex
           flex-direction: column
           
-          
-        
 
         .title-page
           font-style: italic
           font-size: 3rem
-          color: variables.$title-color 
+          color: variables.$blue-dark-cyberpunk
 
         .about-btn
           display: flex
@@ -50,15 +50,15 @@
           .paragraph-page
             font-size: 1rem
             font-weight: 500
-            color: black
+            color: variables.$blue-dark-cyberpunk
             text-align: justify
             
 
 
           .btn-cv
-            background: variables.$buttom-bg
+            background: variables.$blue-dark-cyberpunk
             color: variables.$buttom-letter-color
-            border: 1px solid black
+            border: 1px solid variables.$blue-dark-cyberpunk
             padding: 10px
             font-size: 14px
             font-weight: 500
@@ -68,9 +68,9 @@
             
 
             &:hover
-              background: variables.$pink2-cyberpunk
-              color: variables.$buttom-letter-color
-              border: 1px solid variables.$cyan-cyberpunk
+              background: variables.$yellow-dark-cyberpunk
+              color: variables.$black-cyberpunk
+              border: 1px solid variables.$blue-dark-cyberpunk
               font-weight: 500
               
           
@@ -88,9 +88,9 @@
               border-radius: 100%
 
               &:hover
-                background: variables.$cyan-glass-cyberpunk
-                color: variables.$pink2-cyberpunk
-                border: 1px solid variables.$cyan-cyberpunk
+                background: variables.$yellow-dark-cyberpunk
+                color: variables.$blue-dark-cyberpunk
+                
 
       .about-tools
         display: flex

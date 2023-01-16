@@ -10,7 +10,7 @@
   margin: 0 auto
   height: 110vh
   align-items: center
-  background: variables.$header-fundo
+  background: none
   z-index: 1000
  
   
@@ -28,14 +28,14 @@
   &-brand // .header-brand
     position: absolute
     top: 20px
-    color: variables.$cyan-cyberpunk
+    color: variables.$pink2-cyberpunk
     padding: 30px 20px
     // color: variables.$text-color-dark - dark mode
     font-weight: 400
     font-family: "PT Sans" sans-serif
     font-size: 1.5rem
-    border: 2px solid variables.$cyan-cyberpunk
-    background: linear-gradient(180deg, rgba(0, 54, 56, 0.66) 0%, rgba(0, 54, 56, 0.12) 100%)
+    border: 2px solid variables.$pink2-cyberpunk
+    background: variables.$black-cyberpunk
     
     @include mixins.mobile
       display: none
@@ -43,19 +43,20 @@
        
       
     &:hover
-      background: variables.$alert-cyberpunk
+      color: variables.$black-cyberpunk
+      background: variables.$pink2-cyberpunk
       border: 2px solid variables.$pink2-cyberpunk
       text-decoration: line-through
-      color: variables.$pink2-cyberpunk
-      animation: alert 2s infinite
+     
 
   &-navbar // .header-navbar
     ul
       height: 100%
       flex-direction: column
-      border: 2px solid variables.$cyan-cyberpunk
-      background: linear-gradient(180deg, rgba(0, 54, 56, 0.66) 0%, rgba(0, 54, 56, 0.12) 100%)
+      border: 2px solid variables.$pink2-cyberpunk
+      background: linear-gradient(90deg, #27080D 0%, #070208 89.6%)
       padding: 3rem 10px
+      
       @include mixins.flex-center
       @include mixins.mobile
         flex-direction: row
@@ -67,7 +68,7 @@
         i
           cursor: pointer
           transition: .8s
-          color: variables.$cyan-cyberpunk
+          color: variables.$pink2-cyberpunk
           &:hover
             transform: scale(1.140)  
             transition: .4s

@@ -26,13 +26,14 @@
   color: #6d6d6d
   
 @mixin btn
-  font-weight: 300
+  font-weight: 400
   font-size: 1.5rem
   width: 105px
   height: 55px 
   border: none
-  background: variables.$bg-dark-mode
-  color: variables.$buttom-letter-color
+  background: none
+  color: variables.$pink2-cyberpunk
+  border: 1px solid variables.$pink2-cyberpunk
   text-align: center
   cursor: pointer
 
@@ -77,7 +78,7 @@ $medio: 992px
 $large: 1312px
 
 @mixin mobile
-  @media (min-width: $small)
+  @media (max-width: $small)
     @content
 
 			
