@@ -17,7 +17,7 @@
        font-style: italic
        -webkit-text-stroke-width: 1px
        -webkit-text-stroke-color: variables.$pink2-cyberpunk
-       text-shadow: 0px 2px 10px variables.$alert-cyberpunk
+       text-shadow: 0px 2px 1px variables.$alert-cyberpunk
        font-weight: 900 
        cursor: pointer
        transition: ease 1s
@@ -50,11 +50,7 @@
           
           transition: none
           
-          @include mixins.letterNeon 
- 
-            
-
-
+          
     .text
       color: variables.$cyan-cyberpunk
       font-weight: 400
@@ -81,3 +77,111 @@
         --curve-size: .5em
         --border-width: .125em
         clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+    
+    .app-wrapper
+      display: flex
+      align-items: center
+      justify-content: center
+      
+
+/* fundo do player */
+
+    .player 
+        background-color: #c41515
+        padding: 10px 50px
+        width: 414px
+        max-width: 100%
+        border-radius: 16px
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2)
+
+
+/* capas */
+
+        .song-img 
+            position: relative
+            display: block
+            margin: 0 auto
+            width: 300px
+            background-color: #FE4880
+            border-radius: 2%
+            box-shadow: 0px 2px 20px rgba(243, 243, 235, 0.6)
+            margin-bottom: 50px
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            &:after
+               content: ''
+               padding-top: 100%
+               display: block
+               // contorno nenon da imagem
+               &:before
+                  content: ''
+                  display: block
+                  position: absolute
+                  top: -20px
+                  left: -20px
+                  right: -20px
+                  bottom: -20px
+                  border: 2px solid #E300c4
+                  border-radius: 2%
+         
+
+      
+        .song-details 
+            text-align: center
+            margin-bottom: 30px
+
+            h2
+               font-size: 24px
+               font-weight: 600
+               color: #ffffff
+               margin-bottom: 5px
+               h3 
+                  font-size: 16px
+                  font-weight: 500
+                  color: #888
+            
+            
+         .player-controls
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 30px
+            .play 
+               display: flex
+               align-items: center
+               justify-content: center
+               width: 75px
+               height: 75px
+               border-radius: 50%
+               background-color: #f4f84d
+               color: #101010
+               margin: 0 30px
+
+               border: none
+               appearance: none
+               outline: none
+               cursor: pointer
+               transition: 0.4s
+               &:hover 
+                  box-shadow: 0px 2px 20px rgba(243, 243, 235, 0.6)
+               .skip-btn
+                  background: none
+                  border: none
+                  appearance: none
+                  cursor: pointer
+                  outline: none                  
+                  color: #CCC
+
+
+
+
+
+         .next-up p 
+            color: #888
+            text-align: center
+            font-weight: 500
+            font-size: 16px
+            span 
+               font-weight: 400
+               font-style: italic

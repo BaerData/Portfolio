@@ -59,12 +59,14 @@
   position: absolute
   bottom: 8px
   left: 25px
-  color: #f9fdfc
+  color: white
+  text-shadow: 1px 1px 2px variables.$cyan-cyberpunk
+  border: 1px solid variables.$cyan-cyberpunk
   font-size: 0.8em
   font-weight: bold
-  background-color: variables.$pink2-cyberpunk
+  background-color: variables.$black-cyberpunk
   padding: 10px
-  animation: glitch1 1s infinite
+  animation: glitch1 1s forwards
   --curve-size: .4em
   --border-width: .125em
   clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
