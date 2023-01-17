@@ -21,9 +21,10 @@
     position: fixed
     display: flex
     width: 100vw
-    height: 99px
+    height: 10vh
     bottom: 0px
-    background: variables.$fundo-color
+    background: variables.$black-cyberpunk
+    border: 2px solid variables.$pink2-cyberpunk
 
   &-brand // .header-brand
     position: absolute
@@ -61,6 +62,9 @@
       @include mixins.mobile
         flex-direction: row
         padding: 1px
+        border: none
+        box-shadow: none
+        
       li 
         margin: 2rem
         font-size: 1.1rem

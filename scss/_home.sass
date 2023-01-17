@@ -11,127 +11,168 @@
     justify-content: center
     @include mixins.page
     
+      
+    .div-wrapper
+      display: grid
+      grid-template-columns: 2fr  
+      grid-template-rows: 1fr
+      gap: 40px
+      @include mixins.mobile
+         margin-bottom: 1rem
+         
+         
+
+      .home-wrapper
+         display: flex
+         flex-direction: column
+         align-items: center
+         justify-content: center
  
-    .home-title
-       font-size: 11rem
-       font-style: italic
-       -webkit-text-stroke-width: 1px
-       -webkit-text-stroke-color: variables.$pink2-cyberpunk
-       text-shadow: 0px 2px 1px variables.$alert-cyberpunk
-       font-weight: 900 
-       cursor: pointer
-       transition: ease 1s
-       @include mixins.mobile
-          font-size: 4rem
-       
-       .letterNeon
-          color: variables.$black-cyberpunk
-          
-          &:hover
-            animation: letterNeon 1s forwards
-            
-    
-    .home-subtitle
-       font-size: 4rem
-       cursor: pointer
-       font-weight: 300   
-       font-family: 'Kanit', sans-serif
-       
-       @include mixins.mobile
-          font-size: 2rem
-       
-       .letterNeon
-        color: variables.$pink2-cyberpunk
-        text-shadow: 0px 2px 30px variables.$red-cyberpunk
-        
-        &:hover
-          color: black
-          background-color: variables.$pink2-cyberpunk
-          
-          transition: none
-          
-          
-    .text
-      color: variables.$cyan-cyberpunk
-      font-weight: 400
-      text-transform: uppercase
-      margin: 4px 10px
-      line-height: 40px
+         .home-title
+            font-size: 9rem
+            font-style: italic
+            -webkit-text-stroke-width: 1px
+            -webkit-text-stroke-color: variables.$pink2-cyberpunk
+            text-shadow: 0px 2px 1px variables.$alert-cyberpunk
+            font-weight: 900 
+            cursor: pointer
+            transition: ease 1s
+            @include mixins.mobile
+               font-size: 4rem
 
-    .home-btn
-      margin: 30px
-      transition: .5s
-      cursor: pointer
-      
-        
-      @include mixins.btn
-      
-      &:hover
-        width: 200px
-        transition: .2s  
-        background: variables.$pink2-cyberpunk
-        color: variables.$black-cyberpunk
-        
-        font-weight: 400
-        border: 1px inset variables.$pink2-cyberpunk
-        --curve-size: .5em
-        --border-width: .125em
-        clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
-    
-    .app-wrapper
-      display: flex
-      align-items: center
-      justify-content: center
-      .player
-
-         background: linear-gradient(180deg, #080303 0%, rgba(7, 1, 2, 0.781) 100%)
-         border-left: 3px solid variables.$pink2-cyberpunk
-         padding: 10px 50px
-         width: 414px
-         max-width: 100%
-         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2)
-         .song-details 
-            text-align: center
-            margin-bottom: 30px
-
-            h2
-               font-size: 24px
-               font-weight: 600
-               color: variables.$pink2-cyberpunk
-               margin-bottom: 5px
-               h3 
-                  font-size: 16px
-                  font-weight: 500
-                  color: variables.$pink2-cyberpunk
-
-         .player-controls
-            display: flex
-            align-items: center
-            justify-content: center
-            margin-bottom: 30px
-            
-            .skip-btn
-               background: none
-               border: none
-               appearance: none
-               cursor: pointer
-               outline: none                  
-               color: variables.$cyan-cyberpunk
-            .play 
-               display: flex
-               align-items: center
-               justify-content: center
-               width: 75px
-               height: 75px
-               border-radius: 50%
-               background-color: variables.$cyan-cyberpunk
+            .letterNeon
                color: variables.$black-cyberpunk
-               margin: 0 30px
-               border: none
-               appearance: none
-               outline: none
-               cursor: pointer
-               transition: 0.4s
-               &:hover 
-                  box-shadow: 0px 2px 10px variables.$cyan-cyberpunk
-               
+
+               &:hover
+                 animation: letterNeon 1s forwards
+
+
+         .home-subtitle
+            font-size: 4rem
+            cursor: pointer
+            font-weight: 300   
+            font-family: 'Kanit', sans-serif
+
+            @include mixins.mobile
+               font-size: 2rem
+
+            .letterNeon
+             color: variables.$pink2-cyberpunk
+             text-shadow: 0px 2px 30px variables.$red-cyberpunk
+
+             &:hover
+               color: black
+               background-color: variables.$pink2-cyberpunk
+
+               transition: none
+
+
+         .text
+           color: variables.$cyan-cyberpunk
+           font-weight: 400
+           text-transform: uppercase
+           margin: 4px 10px
+           line-height: 40px
+           text-shadow: 0px 1px 3px variables.$cyan-cyberpunk
+         .home-btn
+           margin: 30px
+           transition: .5s
+           cursor: pointer
+
+
+           @include mixins.btn
+
+           &:hover
+             width: 200px
+             transition: .2s  
+             background: variables.$pink2-cyberpunk
+             color: variables.$black-cyberpunk
+
+             font-weight: 400
+             border: 1px inset variables.$pink2-cyberpunk
+             --curve-size: .5em
+             --border-width: .125em
+             clip-path: polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+      
+      .app-wrapper
+        position: fixed
+        right: 20px
+        bottom: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        @include mixins.mobile
+         position: relative
+         margin-left: 10%
+         
+        .player
+           
+           background: linear-gradient(180deg, #080303 0%, rgba(7, 1, 2, 0.781) 100%)
+           border-left: 2px solid variables.$pink2-cyberpunk
+           border-right: 2px solid variables.$pink2-cyberpunk
+           padding: 5px 
+           width: 324px
+           max-width: 100%
+           
+           
+           .song-details 
+              text-align: center
+              margin-bottom: 15px
+              color: variables.$cyan-cyberpunk
+   
+              h2
+                 font-size: 24px
+                 font-weight: 600
+                 color: variables.$pink2-cyberpunk
+                 margin-bottom: 5px
+                 h3 
+                    font-size: 16px
+                    font-weight: 500
+                    color: variables.$pink2-cyberpunk
+   
+           .player-controls
+              display: flex
+              align-items: center
+              justify-content: center
+              margin-bottom: 30px
+              
+              .skip-btn
+                 background: none
+                 border: none
+                 appearance: none
+                 cursor: pointer
+                 outline: none                  
+                 color: variables.$cyan-cyberpunk
+              .play 
+                 display: flex
+                 align-items: center
+                 justify-content: center
+                 width: 45px
+                 height: 45px
+                 font-size: 9px
+                 border-radius: 50%
+                 background-color: variables.$cyan-cyberpunk
+                 color: variables.$black-cyberpunk
+                 margin: 0 20px
+                 border: none
+                 appearance: none
+                 outline: none
+                 cursor: pointer
+                 transition: 0.4s
+                 &:hover 
+                    box-shadow: 0px 2px 10px variables.$cyan-cyberpunk
+        
+           .next-up
+              p
+                 color: variables.$pink2-cyberpunk
+                 text-shadow: 0px 1px 3px variables.$pink2-cyberpunk
+                 font-size: .8rem
+              span
+                 background-color: variables.$cyan-cyberpunk
+                 color: variables.$black-cyberpunk 
+                 padding: 3px
+                 text-shadow: 0px 1px 2px variables.$cyan-cyberpunk
+                 font-size: .9rem 
+                 --curve-size: .4em
+                 --border-width: .125em
+                 clip-path: polygon(-100% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)

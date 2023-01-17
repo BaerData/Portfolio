@@ -22,15 +22,21 @@ window.onload = () => {
     /* ações para acessar e mostas informações sobre as músicas */
     let songs = [
         {
-            title: 'M1',
-            artist: 'By SPhil Gonzo - FVCK',
+            title: 'FVCK',
+            artist: 'By Phil Gonzo',
             song_path:'music/m1.mp3'
             
         },
         {
-            title: 'MM2',
-            artist: 'By Musica',
+            title: 'Freaky',
+            artist: 'By Infraction',
             song_path: 'music/m2.mp4'
+            
+        },
+        {
+            title: 'Overnight',
+            artist: 'By Infraction',
+            song_path: 'music/m3.mp3'
             
         }
  

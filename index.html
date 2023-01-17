@@ -32,33 +32,39 @@
     </header>
 
     <main class="main">
-      <section class="home" id="home">
-        <h2 class="home-title"><span class="letterNeon">H</span><span class="letterNeon">i</span><span class="letterNeon" id="letterNeon-1">,</span> <span class="letterNeon">I</span> <span class="letterNeon">'</span><span class="letterNeon">m</span></h2>
-        <h2 class="home-subtitle">
-         <span class="letterNeon">J</span><span class="letterNeon">o</span><span class="letterNeon">n</span><span class="letterNeon">a</span><span class="letterNeon">t</span><span class="letterNeon">h</span><span class="letterNeon">a</span><span class="letterNeon">n</span> <span class="letterNeon">B</span><span class="letterNeon">a</span><span class="letterNeon">e</span><span class="letterNeon">r</span> 
-        </h2>
-
-        <h3 class="text">Web Developer | Power BI Analytics</h3>
-        <button class="home-btn" onclick="location.href='#about'">START</button>
-        <div class="app-wrapper">
-          <div class="player">          
-            <!-- transições e ações internas do player-->
-              <audio id="music-player"></audio>
-              <div id="song-image" class="song-img"></div>
-              <div class="song-details">
-                  <h2 id="song-title">Lorem ipsum dolor</h2>
-                  <h3 id="song-artist">By MixKit</h3>
-              </div>
-              <div class="player-controls">
-                  <button id="prev-btn" class="skip-btn"><i class="fas fa-backward fa-lg"></i></button>
-                  <button id="play-btn" class="play"><i id="play-icon" class="fas fa-play fa-2x"></i></button>
-                  <button id="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
-              </div>
-              <div class="next-up">
-                  <p>A seguir: <span id="song-next-up">Lorem ipsum dolor</span></p>
-              </div>
+      <section class="home" id="home"> 
+        <div class="div-wrapper">
+          <div class="home-wrapper">
+            <h2 class="home-title"><span class="letterNeon">H</span><span class="letterNeon">i</span><span class="letterNeon" id="letterNeon-1">,</span> <span class="letterNeon">I</span> <span class="letterNeon">'</span><span class="letterNeon">m</span></h2>
+            <h2 class="home-subtitle">
+            <span class="letterNeon">J</span><span class="letterNeon">o</span><span class="letterNeon">n</span><span class="letterNeon">a</span><span class="letterNeon">t</span><span class="letterNeon">h</span><span class="letterNeon">a</span><span class="letterNeon">n</span> <span class="letterNeon">B</span><span class="letterNeon">a</span><span class="letterNeon">e</span><span class="letterNeon">r</span> 
+            </h2>
+  
+          <h3 class="text">Web Developer | Power BI Analytics</h3>
+          <button class="home-btn" onclick="location.href='#about'">START</button>
+          </div>        
+          <div class="app-wrapper">
+            <div class="player">          
+              <!-- transições e ações internas do player-->
+                <audio id="music-player" autoplay ></audio>
+                <div id="song-image" class="song-img"></div>
+                <div class="song-details">
+                    <h2 id="song-title">Lorem ipsum dolor</h2>
+                    <h3 id="song-artist">By MixKit</h3>
+                </div>
+                <div class="player-controls">
+                    <button id="prev-btn" class="skip-btn"><i class="fas fa-backward fa-lg"></i></button>
+                    <button id="play-btn" class="play"><i id="play-icon" class="fas fa-play fa-2x"></i></button>
+                    <button id="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
+                    
+                </div>
+                <div class="next-up">
+                    <p>A seguir: <span id="song-next-up"> </span></p>
+                </div>
+            </div>
           </div>
         </div>
+   
       </section>
 
       <section class="about" id="about">
