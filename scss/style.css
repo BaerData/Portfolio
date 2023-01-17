@@ -523,101 +523,67 @@
   align-items: center;
   justify-content: center;
 }
+.home .app-wrapper .player {
+  background: linear-gradient(180deg, #080303 0%, rgba(7, 1, 2, 0.781) 100%);
+  border-left: 3px solid #f7466c;
+  padding: 10px 50px;
+  width: 414px;
+  max-width: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.home .app-wrapper .player .song-details {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.home .app-wrapper .player .song-details h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f7466c;
+  margin-bottom: 5px;
+}
+.home .app-wrapper .player .song-details h2 h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #f7466c;
+}
+.home .app-wrapper .player .player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.home .app-wrapper .player .player-controls .skip-btn {
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  outline: none;
+  color: #63eafc;
+}
+.home .app-wrapper .player .player-controls .play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #63eafc;
+  color: rgba(3, 0, 0, 0.7803921569);
+  margin: 0 30px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.home .app-wrapper .player .player-controls .play:hover {
+  box-shadow: 0px 2px 10px #63eafc;
+}
 
-/* fundo do player */
- *
- *  .player 
- *      background-color: #c41515
- *      padding: 10px 50px
- *      width: 414px
- *      max-width: 100%
- *      border-radius: 16px
- *      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2) */
-/* capas */
- *
- *      .song-img 
- *          position: relative
- *          display: block
- *          margin: 0 auto
- *          width: 300px
- *          background-color: #FE4880
- *          border-radius: 2%
- *          box-shadow: 0px 2px 20px rgba(243, 243, 235, 0.6)
- *          margin-bottom: 50px
- *          background-position: center
- *          background-size: cover
- *          background-repeat: no-repeat
- *          &:after
- *             content: ''
- *             padding-top: 100%
- *             display: block
- *             // contorno nenon da imagem
- *             &:before
- *                content: ''
- *                display: block
- *                position: absolute
- *                top: -20px
- *                left: -20px
- *                right: -20px
- *                bottom: -20px
- *                border: 2px solid #E300c4
- *                border-radius: 2%
- *      .song-details 
- *          text-align: center
- *          margin-bottom: 30px
- *
- *          h2
- *             font-size: 24px
- *             font-weight: 600
- *             color: #ffffff
- *             margin-bottom: 5px
- *             h3 
- *                font-size: 16px
- *                font-weight: 500
- *                color: #888
- *       .player-controls
- *          display: flex
- *          align-items: center
- *          justify-content: center
- *          margin-bottom: 30px
- *          .play 
- *             display: flex
- *             align-items: center
- *             justify-content: center
- *             width: 75px
- *             height: 75px
- *             border-radius: 50%
- *             background-color: #f4f84d
- *             color: #101010
- *             margin: 0 30px
- *
- *             border: none
- *             appearance: none
- *             outline: none
- *             cursor: pointer
- *             transition: 0.4s
- *             &:hover 
- *                box-shadow: 0px 2px 20px rgba(243, 243, 235, 0.6)
- *             .skip-btn
- *                background: none
- *                border: none
- *                appearance: none
- *                cursor: pointer
- *                outline: none                  
- *                color: #CCC
- *
- *
- *
- *
- *
- *       .next-up p 
- *          color: #888
- *          text-align: center
- *          font-weight: 500
- *          font-size: 16px
- *          span 
- *             font-weight: 400
- *             font-style: italic */
 .about {
   display: flex;
   align-items: center;

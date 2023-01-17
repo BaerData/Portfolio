@@ -82,71 +82,41 @@
       display: flex
       align-items: center
       justify-content: center
-      
+      .player
 
-/* fundo do player */
-
-    .player 
-        background-color: #c41515
-        padding: 10px 50px
-        width: 414px
-        max-width: 100%
-        border-radius: 16px
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2)
-
-
-/* capas */
-
-        .song-img 
-            position: relative
-            display: block
-            margin: 0 auto
-            width: 300px
-            background-color: #FE4880
-            border-radius: 2%
-            box-shadow: 0px 2px 20px rgba(243, 243, 235, 0.6)
-            margin-bottom: 50px
-            background-position: center
-            background-size: cover
-            background-repeat: no-repeat
-            &:after
-               content: ''
-               padding-top: 100%
-               display: block
-               // contorno nenon da imagem
-               &:before
-                  content: ''
-                  display: block
-                  position: absolute
-                  top: -20px
-                  left: -20px
-                  right: -20px
-                  bottom: -20px
-                  border: 2px solid #E300c4
-                  border-radius: 2%
-         
-
-      
-        .song-details 
+         background: linear-gradient(180deg, #080303 0%, rgba(7, 1, 2, 0.781) 100%)
+         border-left: 3px solid variables.$pink2-cyberpunk
+         padding: 10px 50px
+         width: 414px
+         max-width: 100%
+         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2)
+         .song-details 
             text-align: center
             margin-bottom: 30px
 
             h2
                font-size: 24px
                font-weight: 600
-               color: #ffffff
+               color: variables.$pink2-cyberpunk
                margin-bottom: 5px
                h3 
                   font-size: 16px
                   font-weight: 500
-                  color: #888
-            
-            
+                  color: variables.$pink2-cyberpunk
+
          .player-controls
             display: flex
             align-items: center
             justify-content: center
             margin-bottom: 30px
+            
+            .skip-btn
+               background: none
+               border: none
+               appearance: none
+               cursor: pointer
+               outline: none                  
+               color: variables.$cyan-cyberpunk
             .play 
                display: flex
                align-items: center
@@ -154,34 +124,14 @@
                width: 75px
                height: 75px
                border-radius: 50%
-               background-color: #f4f84d
-               color: #101010
+               background-color: variables.$cyan-cyberpunk
+               color: variables.$black-cyberpunk
                margin: 0 30px
-
                border: none
                appearance: none
                outline: none
                cursor: pointer
                transition: 0.4s
                &:hover 
-                  box-shadow: 0px 2px 20px rgba(243, 243, 235, 0.6)
-               .skip-btn
-                  background: none
-                  border: none
-                  appearance: none
-                  cursor: pointer
-                  outline: none                  
-                  color: #CCC
-
-
-
-
-
-         .next-up p 
-            color: #888
-            text-align: center
-            font-weight: 500
-            font-size: 16px
-            span 
-               font-weight: 400
-               font-style: italic
+                  box-shadow: 0px 2px 10px variables.$cyan-cyberpunk
+               
