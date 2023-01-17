@@ -35,7 +35,7 @@
     font-family: "PT Sans" sans-serif
     font-size: 1.5rem
     border: 2px solid variables.$pink2-cyberpunk
-    background: variables.$black-cyberpunk
+    box-shadow: inset 1px 2px 14px variables.$red-cyberpunk
     
     @include mixins.mobile
       display: none
@@ -54,7 +54,7 @@
       height: 100%
       flex-direction: column
       border: 2px solid variables.$pink2-cyberpunk
-      background: linear-gradient(90deg, #27080D 0%, #070208 89.6%)
+      box-shadow: inset 1px 2px 14px variables.$red-cyberpunk
       padding: 3rem 10px
       
       @include mixins.flex-center
@@ -64,6 +64,7 @@
       li 
         margin: 2rem
         font-size: 1.1rem
+        
 
         i
           cursor: pointer
@@ -71,8 +72,11 @@
           color: variables.$pink2-cyberpunk
           &:hover
             transform: scale(1.140)  
-            transition: .4s
-            color: variables.$pink2-cyberpunk
-            text-decoration-line: line-through
+            transition: .6s ease
+            color: variables.$yellow-cyberpunk
+            text-shadow: 1px 1px 3px variables.$yellow-dark-cyberpunk
+            -webkit-text-stroke-width: 1px
+            -webkit-text-stroke-color: variables.$black-cyberpunk
+            
 
           
