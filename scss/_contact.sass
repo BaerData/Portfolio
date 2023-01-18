@@ -8,6 +8,8 @@
     @include mixins.mobile
       height: 150vh 
       justify-content: center
+    @include mixins.desktop
+      height: 200vh
                 
               
     .contact-container
@@ -29,6 +31,10 @@
           display: flex
           justify-content: center
           flex-direction: column
+      @include mixins.desktop-large
+          display: flex
+          justify-content: center
+          flex-direction: column
         
       .contact-title
         @include mixins.flex-column
@@ -47,8 +53,11 @@
         @include mixins.desktop
           display: flex
           align-items: center
-          
           gap: 20px
+        @include mixins.desktop-large
+          display: flex
+          align-items: center
+          gap: 10px
          
         
         .title-contato
@@ -67,6 +76,8 @@
             line-height: 10px
             text-align: center
           @include mixins.desktop
+            font-size: 4rem
+          @include mixins.desktop-large
             font-size: 4rem
             
           

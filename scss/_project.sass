@@ -9,10 +9,13 @@
       height: 250vh
     @include mixins.tablet
       height: 200vh
+    @include mixins.desktop
+      height: 200vh
           
     .project-container
       display: flex
-      
+      @include mixins.desktop-large
+        margin-left: 5rem
 
       .project-content
         display: grid
@@ -33,6 +36,9 @@
         @include mixins.desktop
           display: grid
           grid-template-columns: 1fr 1fr
+        @include mixins.desktop-large
+          display: grid
+          grid-template-columns: 1fr 1fr 1fr
 
         .project-title
           
@@ -85,8 +91,11 @@
           --border-width: .125em
           clip-path: polygon(-110% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
           filter: brightness(70%) contrast(110%)
-          &:hover
+
+          @include mixins.desktop-large
+            width: 16rem
             
+          &:hover
             transition: .1s
             scale: (1.033)  
                

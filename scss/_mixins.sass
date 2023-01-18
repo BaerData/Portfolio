@@ -92,6 +92,8 @@ $laptop: 769px
 $laptop-medio: 900px
 $desktop: 901px
 $desktop-medio: 1024px
+$desktop-large: 1200px
+
 
 
 @mixin mobile
@@ -108,6 +110,10 @@ $desktop-medio: 1024px
 
 @mixin desktop
   @media (min-width: $desktop) and (max-width:$desktop-medio)
+    @content
+
+@mixin desktop-large
+  @media (min-width: 1025px) and (max-width:$desktop-large)
     @content
 
 			
