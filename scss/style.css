@@ -718,7 +718,7 @@
 }
 @media (min-width: 901px) and (max-width: 1024px) {
   .about {
-    height: 200vh;
+    height: 100vh;
   }
 }
 .about .about-container {
@@ -930,7 +930,7 @@
 }
 @media (min-width: 901px) and (max-width: 1024px) {
   .project {
-    height: 200vh;
+    height: 140vh;
   }
 }
 .project .project-container {
