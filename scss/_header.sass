@@ -25,23 +25,24 @@
     bottom: 0px
     background: variables.$black-cyberpunk
     border: 2px solid variables.$pink2-cyberpunk
+  @include mixins.tablet
+    @include mixins.headerMobile
 
   &-brand // .header-brand
     position: absolute
     top: 20px
     color: variables.$pink2-cyberpunk
-    padding: 30px 20px
+    padding: 10px 20px
     // color: variables.$text-color-dark - dark mode
     font-weight: 400
-    font-family: "PT Sans" sans-serif
     font-size: 1.5rem
     border: 2px solid variables.$pink2-cyberpunk
     box-shadow: inset 1px 2px 6px variables.$red-cyberpunk
     
     @include mixins.mobile
       display: none
-      
-       
+    @include mixins.tablet  
+       display: none
       
     &:hover
       color: variables.$black-cyberpunk
@@ -60,6 +61,12 @@
       
       @include mixins.flex-center
       @include mixins.mobile
+        flex-direction: row
+        padding: 1px
+        border: none
+        box-shadow: none
+
+      @include mixins.tablet
         flex-direction: row
         padding: 1px
         border: none

@@ -40,6 +40,9 @@
             @include mixins.mobile
                font-size: 4rem
 
+            @include mixins.tablet
+               font-size: 5rem
+
             .letterNeon
                color: variables.$black-cyberpunk
 
@@ -104,15 +107,20 @@
         @include mixins.mobile
          position: relative
          margin-left: 10%
+        @include mixins.tablet
+         position: relative
+         margin-left: 10%
          
         .player
            
-           background: linear-gradient(180deg, #080303 0%, rgba(7, 1, 2, 0.781) 100%)
+           background: linear-gradient(180deg, #080404 0%, rgba(4, 19, 27, 0.781) 100%)
            border-left: 2px solid variables.$pink2-cyberpunk
            border-right: 2px solid variables.$pink2-cyberpunk
-           padding: 5px 
+           padding: 10px 
            width: 324px
            max-width: 100%
+           --curve-size: 3em
+           clip-path: polygon(-500% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
            
            
            .song-details 

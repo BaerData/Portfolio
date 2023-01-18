@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Bäer</title>
-    <link rel="icon" type="image/png" href="Img/eye.png"/>
+    <title>CyberPortfolio | Bäer</title>
+    <link rel="icon" type="image/png" href="Img/b.png"/>
     <link rel="stylesheet" href="scss/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -37,16 +38,16 @@
           <div class="home-wrapper">
             <h2 class="home-title"><span class="letterNeon">H</span><span class="letterNeon">i</span><span class="letterNeon" id="letterNeon-1">,</span> <span class="letterNeon">I</span> <span class="letterNeon">'</span><span class="letterNeon">m</span></h2>
             <h2 class="home-subtitle">
-            <span class="letterNeon">J</span><span class="letterNeon">o</span><span class="letterNeon">n</span><span class="letterNeon">a</span><span class="letterNeon">t</span><span class="letterNeon">h</span><span class="letterNeon">a</span><span class="letterNeon">n</span> <span class="letterNeon">B</span><span class="letterNeon">a</span><span class="letterNeon">e</span><span class="letterNeon">r</span> 
+            <span class="letterNeon">J</span><span class="letterNeon">o</span><span class="letterNeon">n</span><span class="letterNeon">a</span><span class="letterNeon">t</span><span class="letterNeon">h</span><span class="letterNeon">a</span><span class="letterNeon">n</span> <span class="letterNeon">B</span><span class="letterNeon">ä</span><span class="letterNeon">e</span><span class="letterNeon">r</span> 
             </h2>
   
           <h3 class="text">Web Developer | Power BI Analytics</h3>
           <button class="home-btn" onclick="location.href='#about'">START</button>
           </div>        
-          <div class="app-wrapper">
+          <div class="app-wrapper"data-aos="flip-up">
             <div class="player">          
               <!-- transições e ações internas do player-->
-                <audio id="music-player" autoplay ></audio>
+                <audio id="music-player"  ></audio>
                 <div id="song-image" class="song-img"></div>
                 <div class="song-details">
                     <h2 id="song-title">Lorem ipsum dolor</h2>
@@ -68,8 +69,8 @@
       </section>
 
       <section class="about" id="about">
-        <div class="about-container">
-          <div class="about-content">
+        <div class="about-container" >
+          <div class="about-content" data-aos="fade-up">
             <h1 class="title-page">Me</h1>
 
             <div class="about-btn">
@@ -92,24 +93,24 @@
           </div>
           <div class="about-tools">
             <h1 class="title-page-tools">Tools</h1>
-            <div class="about-tools-card">
+            <div class="about-tools-card" >
               <span class="tools" title="Html5"
-                ><i class="fa-brands fa-html5"></i
+                 data-aos="flip-up"><i class="fa-brands fa-html5"></i
               ></span>
               <span class="tools" title="Css3"
-                ><i class="fa-brands fa-css3-alt"></i
+                 data-aos="flip-up"><i class="fa-brands fa-css3-alt"></i
               ></span>
               <span class="tools" title="Javascript"
-                ><i class="fa-brands fa-js"></i
+                 data-aos="flip-up"><i class="fa-brands fa-js"></i
               ></span>
               <span class="tools" title="Microsoft Power BI"
-                ><i class="fa-solid fa-chart-simple"></i
+                 data-aos="flip-up"><i class="fa-solid fa-chart-simple"></i
               ></span>
               <span class="tools" title="Sass"
-                ><i class="fa-brands fa-sass"></i
+                 data-aos="flip-up"><i class="fa-brands fa-sass"></i
               ></span>
               <span class="tools" title="Figma"
-                ><i class="fa-brands fa-figma"></i
+                 data-aos="flip-up"><i class="fa-brands fa-figma"></i
               ></span>
             </div>
           </div>
@@ -117,18 +118,19 @@
       </section>
 
       
-      <section class="project" id="project">
-        <div class="project-container">
+
+      <section class="project"  id="project">
+        <div class="project-container" >
           <div class="project-content">
-            <div class="project-title">
+            <div class="project-title" >
               <i class="fa-sharp fa-solid fa-triangle-exclamation"></i>
-              <h1 class="title">PROJETOS</h1>
+              <h1 class="title" >PROJETOS</h1>
               <i class="fa-sharp fa-solid fa-triangle-exclamation"></i>
             </div>
 
             <!-- <div class="project-card"></div> -->
-
-            <div class="project-card">
+            <!-- Baer detail garage -->
+            <div class="project-card" data-aos="flip-up">
               <div class="link-project">
                 <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
                   ><i class="fa-brands fa-github"></i
@@ -139,7 +141,18 @@
               </div>
             </div>
             
-            <div class="project-card">
+            <div class="project-card" data-aos="flip-up">
+              <div class="link-project" >
+                <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://baersenac.github.io/Baer_Detail_Garage/"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="flip-up">
               <div class="link-project">
                 <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
                   ><i class="fa-brands fa-github"></i
@@ -150,7 +163,7 @@
               </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-aos="flip-up">
               <div class="link-project">
                 <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
                   ><i class="fa-brands fa-github"></i
@@ -161,7 +174,7 @@
               </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-aos="flip-up">
               <div class="link-project">
                 <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
                   ><i class="fa-brands fa-github"></i
@@ -172,7 +185,7 @@
               </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-aos="flip-up">
               <div class="link-project">
                 <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
                   ><i class="fa-brands fa-github"></i
@@ -183,7 +196,7 @@
               </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-aos="flip-up">
               <div class="link-project">
                 <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
                   ><i class="fa-brands fa-github"></i
@@ -194,18 +207,7 @@
               </div>
             </div>
 
-            <div class="project-card">
-              <div class="link-project">
-                <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://baersenac.github.io/Baer_Detail_Garage/"
-                  ><i class="fa-solid fa-magnifying-glass"></i
-                ></a>
-              </div>
-            </div>
-
-            <div class="project-card">
+            <div class="project-card" data-aos="flip-up">
               <div class="link-project">
                 <a href="https://github.com/BaerSenac/Baer_Detail_Garage"
                   ><i class="fa-brands fa-github"></i
@@ -221,13 +223,14 @@
 
       <section class="contact" id="contact">
         
-        <div class="contact-container">
-          <div class="contact-title">
+        <div class="contact-container" >
+          <div class="contact-title" data-aos="fade-up" >
             <h1 class="title-contato">Contate-me</h1>
             <h1 class="title-contato">Agradeço pelo apoio.</h2>
             <h3><i class="fa-solid fa-at"></i>jonathanbaeremails@gmail.com</h3>
           </div>
-          <div class="contact-form">
+          <div class="contact-form" data-aos="fade-up"
+          data-aos-anchor-placement="top-center">
             <form action="https://formsubmit.co/jonathanbaeremails@gmail.com" method="post" class="form">
               <input type="text" name="nome" placeholder="Nome" />
               <input type="email" name="email" placeholder="Email" />
@@ -241,11 +244,11 @@
       </section>
       
     </main>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 1000,
-        easing: "all",
+        easing: "ease",
       });
       </script>
       <script src="main.js"></script>

@@ -31,7 +31,7 @@
   width: 105px
   height: 55px 
   border: none
-  background: none
+  background: variables.$black-cyberpunk
   color: variables.$pink2-cyberpunk
   border: 1px solid variables.$pink2-cyberpunk
   text-align: center
@@ -73,14 +73,29 @@
   
 @mixin letterNeon
   animation: letterNeon2 2s forwards
-  
+
+@mixin headerMobile
+  position: fixed
+  display: flex
+  width: 100vw
+  height: 10vh
+  bottom: 0px
+  background: variables.$black-cyberpunk
+  border: 2px solid variables.$pink2-cyberpunk
+   
 
 $small: 375px
-$medio: 992px
+$smallM: 480px
+$medio: 481px
+$medioL: 768px
 $large: 1312px
 
 @mixin mobile
-  @media (min-width: $small) and (max-width:480px)
+  @media (min-width: $small) and (max-width: $smallM)
+    @content
+
+@mixin tablet
+  @media (min-width: $medio) and (max-width:$medioL)
     @content
 
 			

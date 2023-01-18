@@ -22,9 +22,9 @@ window.onload = () => {
     /* ações para acessar e mostas informações sobre as músicas */
     let songs = [
         {
-            title: 'FVCK',
-            artist: 'By Phil Gonzo',
-            song_path:'music/m1.mp3'
+            title: ' Overnight',
+            artist: 'By Infraction',
+            song_path:'music/m3.mp3'
             
         },
         {
@@ -34,9 +34,9 @@ window.onload = () => {
             
         },
         {
-            title: 'Overnight',
-            artist: 'By Infraction',
-            song_path: 'music/m3.mp3'
+            title: 'FVCK',
+            artist: 'By Phil Gonzo',
+            song_path: 'music/m1.mp3'
             
         }
  

@@ -15,6 +15,10 @@
         display: grid
         grid-template-columns: 2fr 
         grid-template-rows: 1fr
+      @include mixins.tablet
+        display: grid
+        grid-template-columns: 2fr 
+        grid-template-rows: 1fr
 
           
 
@@ -34,12 +38,17 @@
           width: 81vw
           display: flex
           flex-direction: column
+        @include mixins.tablet
+          width: 91vw
+          display: flex
+          flex-direction: column
           
 
         .title-page
           font-style: italic
-          font-size: 3rem
+          font-size: 4rem
           color: variables.$blue-dark-cyberpunk
+          
 
         .about-btn
           display: flex
@@ -52,7 +61,10 @@
             font-weight: 500
             color: variables.$blue-dark-cyberpunk
             text-align: justify
-            
+            @include mixins.mobile
+              width: 50vw
+            @include mixins.tablet
+              width: 80vw
 
 
           .btn-cv
@@ -107,7 +119,7 @@
           rotate: 90deg
           text-decoration: line-through 4px solid variables.$pink2-cyberpunk
           color: variables.$cyan-cyberpunk
-          
+          text-shadow: 1px 2px 4px variables.$cyan-cyberpunk
 
           @include mixins.mobile
             font-size: 3rem

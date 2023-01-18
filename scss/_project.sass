@@ -7,6 +7,8 @@
     @include mixins.page
     @include mixins.mobile
       height: 250vh
+    @include mixins.tablet
+      height: 200vh
           
     .project-container
       display: flex
@@ -16,9 +18,13 @@
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         grid-template-rows: 1fr 
+        align-items: flex-start
         gap: 8px
 
         @include mixins.mobile
+          display: grid
+          grid-template-columns: 1fr
+        @include mixins.tablet
           display: grid
           grid-template-columns: 1fr
 
@@ -27,13 +33,14 @@
           display: flex
           align-items: center
           justify-content: center
-          background-color: variables.$pink2-cyberpunk
+          background: linear-gradient(180deg, #080404 0%, rgba(3, 10, 14, 0.781) 80%)
           --curve-size: .9em
           --border-width: .125em
           clip-path: polygon(-80% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
-          box-shadow: 1px 2px 10px variables.$red-cyberpunk
+          box-shadow: 2px 5px 10px variables.$pink2-cyberpunk
           height: 60px
-          
+          border-left: 6px solid variables.$pink2-cyberpunk
+          border-right: 3px solid variables.$pink2-cyberpunk
           
 
           @include mixins.mobile
@@ -44,11 +51,10 @@
             text-align: center
             margin: 10px
             font-size: 1.7rem
-            letter-spacing: 0.2em
             font-weight: 400
+            color: variables.$pink2-cyberpunk
+            animation: glitch1 1s infinite, alert 1s infinite
             
-            color: variables.$black-cyberpunk
-            animation: glitch1 1s infinite
             @include mixins.mobile
               font-size: 2rem
               
@@ -72,6 +78,7 @@
           --curve-size: 2em
           --border-width: .125em
           clip-path: polygon(-110% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+          filter: brightness(70%) contrast(110%)
           &:hover
             
             transition: .1s
