@@ -27,6 +27,12 @@
         @include mixins.tablet
           display: grid
           grid-template-columns: 1fr
+        @include mixins.laptop
+          display: grid
+          grid-template-columns: 1fr 1fr
+        @include mixins.desktop
+          display: grid
+          grid-template-columns: 1fr 1fr
 
         .project-title
           

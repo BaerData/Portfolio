@@ -19,7 +19,11 @@
         display: grid
         grid-template-columns: 2fr 
         grid-template-rows: 1fr
-
+      @include mixins.laptop
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr
+        
           
 
       .about-content
@@ -42,6 +46,17 @@
           width: 91vw
           display: flex
           flex-direction: column
+        @include mixins.laptop
+          width: 45vw
+          display: flex
+          flex-direction: column
+          padding: 4pc
+        @include mixins.desktop
+          margin-left: 7rem
+          width: 40vw
+          display: flex
+          flex-direction: column
+          padding: 4pc
           
 
         .title-page
@@ -65,6 +80,8 @@
               width: 50vw
             @include mixins.tablet
               width: 80vw
+            @include mixins.laptop
+              width: 30vw
 
 
           .btn-cv
@@ -109,7 +126,7 @@
         align-items: center
         flex-direction: row-reverse
         gap: 1px
-        @include mixins.mobile
+        
           
         
         

@@ -84,18 +84,30 @@
   border: 2px solid variables.$pink2-cyberpunk
    
 
-$small: 375px
-$smallM: 480px
-$medio: 481px
-$medioL: 768px
-$large: 1312px
+$mobile: 375px
+$mobile-medio: 480px
+$tablet: 481px
+$tablet-medio: 768px
+$laptop: 769px
+$laptop-medio: 900px
+$desktop: 901px
+$desktop-medio: 1024px
+
 
 @mixin mobile
-  @media (min-width: $small) and (max-width: $smallM)
+  @media (min-width: $mobile) and (max-width: $mobile-medio)
     @content
 
 @mixin tablet
-  @media (min-width: $medio) and (max-width:$medioL)
+  @media (min-width: $tablet) and (max-width:$tablet-medio)
+    @content
+
+@mixin laptop
+  @media (min-width: $laptop) and (max-width:$laptop-medio)
+    @content
+
+@mixin desktop
+  @media (min-width: $desktop) and (max-width:$desktop-medio)
     @content
 
 			

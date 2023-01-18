@@ -22,6 +22,13 @@
       @include mixins.tablet
           display: flex
           justify-content: center
+      @include mixins.tablet
+          display: flex
+          justify-content: center
+      @include mixins.desktop
+          display: flex
+          justify-content: center
+          flex-direction: column
         
       .contact-title
         @include mixins.flex-column
@@ -32,6 +39,15 @@
         @include mixins.tablet
           display: flex
           align-items: center
+          gap: 20px
+        @include mixins.laptop
+          display: flex
+          align-items: flex-end
+          gap: 20px
+        @include mixins.desktop
+          display: flex
+          align-items: center
+          
           gap: 20px
          
         
@@ -46,6 +62,13 @@
           @include mixins.tablet
             font-size: 3.6rem
             text-align: center
+          @include mixins.laptop
+            font-size: 2.4rem
+            line-height: 10px
+            text-align: center
+          @include mixins.desktop
+            font-size: 4rem
+            
           
 
         h3
@@ -55,6 +78,8 @@
           @include mixins.mobile
             font-size: 1rem
           @include mixins.tablet
+            font-size: 1.3rem
+          @include mixins.laptop
             font-size: 1.3rem
 
         i

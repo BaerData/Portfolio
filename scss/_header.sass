@@ -27,6 +27,10 @@
     border: 2px solid variables.$pink2-cyberpunk
   @include mixins.tablet
     @include mixins.headerMobile
+  @include mixins.laptop
+    @include mixins.headerMobile
+  @include mixins.desktop
+    width: 13vw
 
   &-brand // .header-brand
     position: absolute
@@ -42,6 +46,8 @@
     @include mixins.mobile
       display: none
     @include mixins.tablet  
+       display: none
+    @include mixins.laptop  
        display: none
       
     &:hover
@@ -67,6 +73,11 @@
         box-shadow: none
 
       @include mixins.tablet
+        flex-direction: row
+        padding: 1px
+        border: none
+        box-shadow: none
+      @include mixins.laptop
         flex-direction: row
         padding: 1px
         border: none

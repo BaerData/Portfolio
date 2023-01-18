@@ -110,6 +110,9 @@
         @include mixins.tablet
          position: relative
          margin-left: 10%
+        @include mixins.laptop
+         position: relative
+         margin-left: 10%
          
         .player
            
@@ -120,7 +123,7 @@
            width: 324px
            max-width: 100%
            --curve-size: 3em
-           clip-path: polygon(-500% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+           clip-path: polygon(-800% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
            
            
            .song-details 
