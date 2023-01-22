@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header"><!-- header - nav -->
       <a href="" class="header-brand">Bäer</a>
       <nav class="header-navbar">
         
@@ -30,12 +30,12 @@
         </ul>
         
       </nav>
-    </header>
+    </header><!-- header - nav -->
 
     <main class="main">
-      <section class="home" id="home"> 
-        <div class="div-wrapper">
-          <div class="home-wrapper">
+      <section class="home" id="home"> <!-- section home -->
+        <div class="div-wrapper"><!-- div wrapper -->
+          <div class="home-wrapper"><!-- div title home -->
             <h2 class="home-title"><span class="letterNeon">H</span><span class="letterNeon">i</span><span class="letterNeon" id="letterNeon-1">,</span> <span class="letterNeon">I</span> <span class="letterNeon">'</span><span class="letterNeon">m</span></h2>
             <h2 class="home-subtitle">
             <span class="letterNeon">J</span><span class="letterNeon">o</span><span class="letterNeon">n</span><span class="letterNeon">a</span><span class="letterNeon">t</span><span class="letterNeon">h</span><span class="letterNeon">a</span><span class="letterNeon">n</span> <span class="letterNeon">B</span><span class="letterNeon">ä</span><span class="letterNeon">e</span><span class="letterNeon">r</span> 
@@ -43,9 +43,10 @@
   
           <h3 class="text">Web Developer | Power BI Analytics</h3>
           <button class="home-btn" onclick="location.href='#about'">START</button>
-          </div>        
-          <div class="app-wrapper"data-aos="flip-up">
-            <div class="player">          
+          </div><!-- div title home -->        
+          
+          <div class="app-wrapper"data-aos="flip-up"><!-- div radio -->
+            <div class="player"> <!-- player -->         
               <!-- transições e ações internas do player-->
                 <audio id="music-player" autoplay ></audio>
                 <div id="song-image" class="song-img"></div>
@@ -62,17 +63,16 @@
                 <div class="next-up">
                     <p>A seguir: <span id="song-next-up"> </span></p>
                 </div>
-            </div>
-          </div>
-        </div>
+            </div><!-- player -->
+          </div><!-- div radio -->
+        </div><!-- div wrapper -->
    
-      </section>
+      </section><!-- section home -->
 
-      <section class="about" id="about">
-        <div class="about-container" >
-          <div class="about-content" data-aos="fade-up">
+      <section class="about" id="about"><!-- section about -->
+        <div class="about-container" ><!-- about container -->
+          <div class="about-content" data-aos="fade-up"><!-- about content -->
             <h1 class="title-page">Me</h1>
-
             <div class="about-btn">
               <p class="paragraph-page">
                 Olá e bem vind@ ao meu CyberPortfólio. <br>
@@ -88,7 +88,7 @@
                 <a href="https://www.instagram.com/j_silvabaer/"><i class="fa-brands fa-instagram"></i></a>
               </div>
             </div>
-          </div>
+          </div><!-- about content -->
           <div class="about-tools">
             <h1 class="title-page-tools">Tools</h1>
             <div class="about-tools-card" >
@@ -112,13 +112,13 @@
               ></span>
             </div>
           </div>
-        </div>
-      </section>
+        </div><!-- about container -->
+      </section><!-- section about -->
 
       
 
-      <section class="project"  id="project">
-        <div class="project-container" >
+      <section class="project"  id="project"><!-- section project -->
+        <div class="project-container" ><!-- project container -->
           <div class="project-content">
             <div class="project-title" >
               <i class="fa-sharp fa-solid fa-triangle-exclamation"></i>
@@ -126,7 +126,7 @@
               <i class="fa-sharp fa-solid fa-triangle-exclamation"></i>
             </div>
 
-            <!-- <div class="project-card"></div> -->
+            
             <!-- Baer detail garage -->
             <div class="project-card" data-aos="flip-up">
               <div class="link-project">
@@ -213,12 +213,12 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div><!-- project container -->
+      </section><!-- section project -->
 
-      <section class="contact" id="contact">
+      <section class="contact" id="contact"><!-- section contact -->
         
-        <div class="contact-container" >
+        <div class="contact-container" ><!-- contact container -->
           <div class="contact-title" data-aos="fade-up" >
             <h1 class="title-contato">Contate-me</h1>
             <h1 class="title-contato">Agradeço pelo apoio.</h2>
@@ -234,9 +234,9 @@
               <input type="submit" value="Enviar" id="enviar"/>
             </form>
           </div>
-        </div>
+        </div><!-- contact container -->
         
-      </section>
+      </section><!-- section contact -->
       
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
