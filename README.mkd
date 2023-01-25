@@ -1,0 +1,30 @@
+# CyberPortfolio
+### Portfolio baseado na temática cyberpunk
+
+Bem vindo, me chamo Jonathan. <br>
+Desenvolvi do zero este cyberportfolio utilizando HTML e CSS/SASS puro. <br>
+Alterei varias vezes este projeto, no começo era sim bem genérico, mas desta vez queria algo sobre o que eu curtia, gosto de games e futurismo, entao decidi me aventurar no universo cyber. <br>
+
+# Menu
+![image](https://user-images.githubusercontent.com/84423047/213941162-8240bc24-fc9c-4d48-875c-1a3cfef67a85.png)
+- Juntei inumeras informaçoes, prints da interface do game Cyberpunk 2077, pesquisei sobre opnioes de especialista de UI na web.
+- Cheguei a conclusao que neon e cores fortes cansam muito a vista depois de passar horas olhando a mesma pagina rs, mas ainda sim é divertido.
+- As cores core deste projeto foram : #FD003B - para vermelho/rosa, #00F0FF - azul neon & #FCEE09 amarelo de cyberpunk. 
+- Implementei um radio com musicas do game dos grupos Infraction e Phil Gonzo.
+
+# Sobre
+![image](https://user-images.githubusercontent.com/84423047/213941468-13f25011-5ffc-40c4-b754-59e445ac1c24.png)
+- Contei um pouco sobre mim, minhas redes sociais e um botao para download do meu curriculo. 
+- Algumas ferramentas que tenho conhecimento: HTML, CSS, SASS, Javascrip, Microsoft Power BI e Figma.
+
+# Projetos
+![image](https://user-images.githubusercontent.com/84423047/213941601-96cb8019-e549-46d6-9289-63fefeeb7b05.png)
+- Alguns projetos que foram realizados durante meu curso de técnico de informatica e outros realizado do proprio youtube
+
+# Contato
+![image](https://user-images.githubusercontent.com/84423047/213941655-6485f271-66f1-40bd-8e8b-895267d92266.png)
+- Tela de contato, realmente funciona!! (obs: so da um probleminha depois de confirma o capcha, mas vou resolver)
+
+Agradeço quem deu uma conferida e aceito todo tipo melhoria, nao tenho experiência com desenvolvimento web, estou em busca de oportunidades.<br>
+Araraquara, SP - (16) 9 96467556 <br>
+Jonathan Baer.
