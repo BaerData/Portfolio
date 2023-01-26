@@ -24,26 +24,26 @@
 }
 @-webkit-keyframes alert {
   0% {
-    color: #04070a;
+    color: #00000C;
   }
   50% {
     color: #FF003C;
     opacity: 2;
   }
   100% {
-    color: #04070a;
+    color: #00000C;
   }
 }
 @keyframes alert {
   0% {
-    color: #04070a;
+    color: #00000C;
   }
   50% {
     color: #FF003C;
     opacity: 2;
   }
   100% {
-    color: #04070a;
+    color: #00000C;
   }
 }
 @-webkit-keyframes alertBackground {
@@ -299,7 +299,7 @@
     -webkit-text-stroke-color: #00ff6a;
   }
   100% {
-    color: #04070a;
+    color: #00000C;
     opacity: 2;
     transition: ease 1s;
     -webkit-text-stroke-width: 1px;
@@ -322,7 +322,7 @@
     -webkit-text-stroke-color: #00ff6a;
   }
   100% {
-    color: #04070a;
+    color: #00000C;
     opacity: 2;
     transition: ease 1s;
     -webkit-text-stroke-width: 1px;
@@ -333,7 +333,7 @@
 @-webkit-keyframes letterNeon2 {
   0% {
     text-shadow: 0px 2px 54px #FF003C;
-    color: #0e0e0e;
+    color: #000016;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #FF003C;
   }
@@ -345,7 +345,7 @@
 @keyframes letterNeon2 {
   0% {
     text-shadow: 0px 2px 54px #FF003C;
-    color: #0e0e0e;
+    color: #000016;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #FF003C;
   }
@@ -375,7 +375,7 @@
     width: 100vw;
     height: 10vh;
     bottom: 0px;
-    background: #04070a;
+    background: #00000C;
     border: 2px solid #FF003C;
   }
 }
@@ -386,7 +386,7 @@
     width: 100vw;
     height: 10vh;
     bottom: 0px;
-    background: #04070a;
+    background: #00000C;
     border: 2px solid #FF003C;
   }
 }
@@ -397,7 +397,7 @@
     width: 100vw;
     height: 10vh;
     bottom: 0px;
-    background: #04070a;
+    background: #00000C;
     border: 2px solid #FF003C;
   }
 }
@@ -432,7 +432,7 @@
   }
 }
 .header-brand:hover {
-  color: #04070a;
+  color: #00000C;
   background: #FF003C;
   border: 2px solid #FF003C;
   text-decoration: line-through;
@@ -486,7 +486,7 @@
   color: #FCEE09;
   text-shadow: 1px 1px 3px #ffbb00;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #04070a;
+  -webkit-text-stroke-color: #00000C;
 }
 
 .home {
@@ -535,7 +535,7 @@
   }
 }
 .home .div-wrapper .home-wrapper .home-title .letterNeon {
-  color: #04070a;
+  color: #00000C;
 }
 .home .div-wrapper .home-wrapper .home-title .letterNeon:hover {
   -webkit-animation: letterNeon 1s forwards;
@@ -578,7 +578,7 @@
   width: 105px;
   height: 55px;
   border: none;
-  background: #04070a;
+  background: #00000C;
   color: #FF003C;
   border: 1px solid #FF003C;
   text-align: center;
@@ -588,7 +588,7 @@
   width: 200px;
   transition: 0.2s;
   background: #FF003C;
-  color: #04070a;
+  color: #00000C;
   font-weight: 400;
   border: 1px inset #FF003C;
   --curve-size: .5em;
@@ -674,7 +674,7 @@
   font-size: 9px;
   border-radius: 50%;
   background-color: #00F0FF;
-  color: #04070a;
+  color: #00000C;
   margin: 0 20px;
   border: none;
   -webkit-appearance: none;
@@ -694,7 +694,7 @@
 }
 .home .div-wrapper .app-wrapper .player .next-up span {
   background-color: #00F0FF;
-  color: #04070a;
+  color: #00000C;
   padding: 3px;
   text-shadow: 0px 1px 2px #00F0FF;
   font-size: 0.9rem;
@@ -849,7 +849,7 @@
 }
 .about .about-container .about-content .about-btn .btn-cv:hover {
   background: #ffbb00;
-  color: #04070a;
+  color: #00000C;
   border: 1px solid #000841;
   font-weight: 500;
 }
@@ -1014,7 +1014,7 @@
 }
 .project .project-container .project-content .project-title i {
   font-size: 30px;
-  color: #04070a;
+  color: #00000C;
   -webkit-animation: alert 1s infinite;
           animation: alert 1s infinite;
 }
@@ -1031,7 +1031,7 @@
   --border-width: .125em;
   -webkit-clip-path: polygon(-110% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
           clip-path: polygon(-110% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
-  filter: brightness(70%) contrast(110%);
+  filter: contrast(80%) saturate(150%);
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .project .project-container .project-content .project-card {
@@ -1043,20 +1043,16 @@
   scale: 1.033;
 }
 .project .project-container .project-content .project-card:nth-child(2) {
-  background-image: url("../Img/baerLogoGlass.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
-}
-.project .project-container .project-content .project-card:nth-child(2):hover {
   background-image: url("../Img/tumb1.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s;
 }
-.project .project-container .project-content .project-card:nth-child(2):hover::before {
+.project .project-container .project-content .project-card:nth-child(2):hover {
+  filter: none;
+}
+.project .project-container .project-content .project-card:nth-child(2):hover:hover::before {
   content: "";
   letter-spacing: 0.1em;
   position: absolute;
@@ -1067,7 +1063,7 @@
   border: 1px solid #00F0FF;
   font-size: 0.8em;
   font-weight: bold;
-  background-color: #04070a;
+  background-color: #00000C;
   padding: 10px;
   -webkit-animation: glitch1 1s forwards;
           animation: glitch1 1s forwards;
@@ -1078,20 +1074,16 @@
   content: "Baer Garage Detail";
 }
 .project .project-container .project-content .project-card:nth-child(3) {
-  background-image: url("../Img/cakeGlass.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
-}
-.project .project-container .project-content .project-card:nth-child(3):hover {
   background-image: url("../Img/cupcake.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s;
 }
-.project .project-container .project-content .project-card:nth-child(3):hover::before {
+.project .project-container .project-content .project-card:nth-child(3):hover {
+  filter: none;
+}
+.project .project-container .project-content .project-card:nth-child(3):hover:hover::before {
   content: "";
   letter-spacing: 0.1em;
   position: absolute;
@@ -1102,7 +1094,7 @@
   border: 1px solid #00F0FF;
   font-size: 0.8em;
   font-weight: bold;
-  background-color: #04070a;
+  background-color: #00000C;
   padding: 10px;
   -webkit-animation: glitch1 1s forwards;
           animation: glitch1 1s forwards;
@@ -1113,20 +1105,16 @@
   content: "Confeitaria Cupcake";
 }
 .project .project-container .project-content .project-card:nth-child(4) {
-  background-image: url("../Img/steakGlass.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
-}
-.project .project-container .project-content .project-card:nth-child(4):hover {
   background-image: url("../Img/steakTumb.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s;
 }
-.project .project-container .project-content .project-card:nth-child(4):hover::before {
+.project .project-container .project-content .project-card:nth-child(4):hover {
+  filter: none;
+}
+.project .project-container .project-content .project-card:nth-child(4):hover:hover::before {
   content: "";
   letter-spacing: 0.1em;
   position: absolute;
@@ -1137,7 +1125,7 @@
   border: 1px solid #00F0FF;
   font-size: 0.8em;
   font-weight: bold;
-  background-color: #04070a;
+  background-color: #00000C;
   padding: 10px;
   -webkit-animation: glitch1 1s forwards;
           animation: glitch1 1s forwards;
@@ -1148,20 +1136,16 @@
   content: "SteakBurguer";
 }
 .project .project-container .project-content .project-card:nth-child(5) {
-  background-image: url("../Img/marionGlass.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
-}
-.project .project-container .project-content .project-card:nth-child(5):hover {
   background-image: url("../Img/marioTumb.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s;
 }
-.project .project-container .project-content .project-card:nth-child(5):hover::before {
+.project .project-container .project-content .project-card:nth-child(5):hover {
+  filter: none;
+}
+.project .project-container .project-content .project-card:nth-child(5):hover:hover::before {
   content: "";
   letter-spacing: 0.1em;
   position: absolute;
@@ -1172,7 +1156,7 @@
   border: 1px solid #00F0FF;
   font-size: 0.8em;
   font-weight: bold;
-  background-color: #04070a;
+  background-color: #00000C;
   padding: 10px;
   -webkit-animation: glitch1 1s forwards;
           animation: glitch1 1s forwards;
@@ -1183,20 +1167,16 @@
   content: "Mario Jump";
 }
 .project .project-container .project-content .project-card:nth-child(6) {
-  background-image: url("../Img/todoGlass.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
-}
-.project .project-container .project-content .project-card:nth-child(6):hover {
   background-image: url("../Img/todoTumb.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s;
 }
-.project .project-container .project-content .project-card:nth-child(6):hover::before {
+.project .project-container .project-content .project-card:nth-child(6):hover {
+  filter: none;
+}
+.project .project-container .project-content .project-card:nth-child(6):hover:hover::before {
   content: "";
   letter-spacing: 0.1em;
   position: absolute;
@@ -1207,7 +1187,7 @@
   border: 1px solid #00F0FF;
   font-size: 0.8em;
   font-weight: bold;
-  background-color: #04070a;
+  background-color: #00000C;
   padding: 10px;
   -webkit-animation: glitch1 1s forwards;
           animation: glitch1 1s forwards;
@@ -1218,20 +1198,16 @@
   content: "To Do List";
 }
 .project .project-container .project-content .project-card:nth-child(7) {
-  background-image: url("../Img/senhaGlass.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
-}
-.project .project-container .project-content .project-card:nth-child(7):hover {
   background-image: url("../Img/senha.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s;
 }
-.project .project-container .project-content .project-card:nth-child(7):hover::before {
+.project .project-container .project-content .project-card:nth-child(7):hover {
+  filter: none;
+}
+.project .project-container .project-content .project-card:nth-child(7):hover:hover::before {
   content: "";
   letter-spacing: 0.1em;
   position: absolute;
@@ -1242,7 +1218,7 @@
   border: 1px solid #00F0FF;
   font-size: 0.8em;
   font-weight: bold;
-  background-color: #04070a;
+  background-color: #00000C;
   padding: 10px;
   -webkit-animation: glitch1 1s forwards;
           animation: glitch1 1s forwards;
@@ -1253,20 +1229,16 @@
   content: "Gerador de Senhas";
 }
 .project .project-container .project-content .project-card:nth-child(8) {
-  background-image: url("../Img/checkGlass.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
-}
-.project .project-container .project-content .project-card:nth-child(8):hover {
   background-image: url("../Img/checkyellow.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s;
 }
-.project .project-container .project-content .project-card:nth-child(8):hover::before {
+.project .project-container .project-content .project-card:nth-child(8):hover {
+  filter: none;
+}
+.project .project-container .project-content .project-card:nth-child(8):hover:hover::before {
   content: "";
   letter-spacing: 0.1em;
   position: absolute;
@@ -1277,7 +1249,7 @@
   border: 1px solid #00F0FF;
   font-size: 0.8em;
   font-weight: bold;
-  background-color: #04070a;
+  background-color: #00000C;
   padding: 10px;
   -webkit-animation: glitch1 1s forwards;
           animation: glitch1 1s forwards;
@@ -1288,20 +1260,16 @@
   content: "Check List - CRUD";
 }
 .project .project-container .project-content .project-card:nth-child(9) {
-  background-image: url("../Img/powerGlass.png");
+  background-image: url("../Img/cardBI.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.6s;
 }
 .project .project-container .project-content .project-card:nth-child(9):hover {
-  background-image: url("../Img/powerbi.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.6s;
+  filter: none;
 }
-.project .project-container .project-content .project-card:nth-child(9):hover::before {
+.project .project-container .project-content .project-card:nth-child(9):hover:hover::before {
   content: "";
   letter-spacing: 0.1em;
   position: absolute;
@@ -1312,7 +1280,7 @@
   border: 1px solid #00F0FF;
   font-size: 0.8em;
   font-weight: bold;
-  background-color: #04070a;
+  background-color: #00000C;
   padding: 10px;
   -webkit-animation: glitch1 1s forwards;
           animation: glitch1 1s forwards;
@@ -1445,7 +1413,7 @@
 .contact .contact-container .contact-title .title-contato {
   font-size: 5rem;
   font-weight: 900;
-  color: #04070a;
+  color: #00000C;
   line-height: 60px;
 }
 @media (min-width: 375px) and (max-width: 480px) {
@@ -1480,7 +1448,7 @@
 .contact .contact-container .contact-title h3 {
   font-size: 2rem;
   font-weight: 700;
-  color: #04070a;
+  color: #00000C;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .contact .contact-container .contact-title h3 {
@@ -1639,5 +1607,5 @@ body span {
 .main {
   justify-content: center;
   transition: 1s;
-  background: linear-gradient(90deg, #200108 0%, #04070a 10.6%);
+  background: linear-gradient(90deg, rgba(32, 1, 8, 0.6862745098) 0%, #00000C 10.6%);
 }/*# sourceMappingURL=style.css.map */

@@ -90,7 +90,7 @@
           --curve-size: 2em
           --border-width: .125em
           clip-path: polygon(-110% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
-          filter: brightness(70%) contrast(110%)
+          filter: contrast(80%) saturate(150%)
 
           @include mixins.desktop-large
             width: 16rem
@@ -102,68 +102,79 @@
           
           &:nth-child(2)
             
-            @include mixins.bg-img('baerLogoGlass.png')
-            
+            @include mixins.bg-img('tumb1.png')
             &:hover
-              @include mixins.bg-img('tumb1.png')
-              &::before
+              filter: none
+            
+              &:hover::before
                 @include mixins.nameCard
                 content: 'Baer Garage Detail'
+              
             
      
           &:nth-child(3)
-            @include mixins.bg-img('cakeGlass.png')
+            @include mixins.bg-img('cupcake.png')
             &:hover
-              @include mixins.bg-img('cupcake.png')
-              &::before
+              filter: none
+            
+            
+              &:hover::before
                 @include mixins.nameCard
                 content: 'Confeitaria Cupcake'
+              
 
           &:nth-child(4)
-            @include mixins.bg-img('steakGlass.png')
+            @include mixins.bg-img('steakTumb.png')
             &:hover
-              @include mixins.bg-img('steakTumb.png')
-              &::before
+              filter: none
+            
+              &:hover::before
                 @include mixins.nameCard
                 content: 'SteakBurguer'
+              
 
           &:nth-child(5)
-            @include mixins.bg-img('marionGlass.png')
+            @include mixins.bg-img('marioTumb.png')
             &:hover
-              @include mixins.bg-img('marioTumb.png')
-              &::before
+              filter: none
+            
+              &:hover::before
                 @include mixins.nameCard
                 content: 'Mario Jump'
 
           &:nth-child(6)
-            @include mixins.bg-img('todoGlass.png')
+            @include mixins.bg-img('todoTumb.png')
             &:hover
-              @include mixins.bg-img('todoTumb.png')
-              &::before
+              filter: none
+           
+              &:hover::before
                 @include mixins.nameCard
                 content: 'To Do List'
 
           &:nth-child(7)
-            @include mixins.bg-img('senhaGlass.png')
+            @include mixins.bg-img('senha.png')
             &:hover
-              @include mixins.bg-img('senha.png')
-              &::before
+              filter: none
+            
+              &:hover::before
                 @include mixins.nameCard
                 content: 'Gerador de Senhas'
 
           &:nth-child(8)
-            @include mixins.bg-img('checkGlass.png')
+            @include mixins.bg-img('checkyellow.png')
             &:hover
-              @include mixins.bg-img('checkyellow.png')
-              &::before
+              filter: none
+            
+              &:hover::before
                 @include mixins.nameCard
                 content: 'Check List - CRUD'
 
           &:nth-child(9)
-            @include mixins.bg-img('powerGlass.png')
+            @include mixins.bg-img('cardBI.png')
             &:hover
-              @include mixins.bg-img('powerbi.png')
-              &::before
+              filter: none
+            
+              &:hover::before
                 @include mixins.nameCard
                 content: 'Dashboards Microsoft Power'
 
