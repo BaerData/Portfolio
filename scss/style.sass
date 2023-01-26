@@ -58,6 +58,32 @@ body
   
  
   
+footer
+  display: flex
+  align-items: center
+  justify-content: center 
+  height: 10vh
+  background: variables.$black-cyberpunk
+  span
+    color: variables.$cyan-cyberpunk
+  @include mixins.mobile
+    height: 30vh
+    display: flex
+    align-items: flex-start
+    span
+      margin-top: 50px
+  @include mixins.tablet
+    height: 20vh
+    display: flex
+    align-items: flex-start
+    span
+      margin-top: 50px
+  @include mixins.laptop
+    height: 20vh
+    display: flex
+    align-items: flex-start
+    span
+      margin-top: 50px
     
     
 

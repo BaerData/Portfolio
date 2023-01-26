@@ -765,7 +765,7 @@
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .about .about-container .about-content {
-    width: 81vw;
+    width: 91vw;
     display: flex;
     flex-direction: column;
   }
@@ -818,11 +818,11 @@
   font-size: 1rem;
   font-weight: 500;
   color: #000841;
-  text-align: justify;
+  text-align: left;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .about .about-container .about-content .about-btn .paragraph-page {
-    width: 50vw;
+    width: 80vw;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -1320,16 +1320,17 @@
   width: 100%;
   height: 100vh;
   background: #FCEE09;
+  height: 90vh;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .contact {
-    height: 150vh;
+    height: 110vh;
     justify-content: center;
   }
 }
 @media (min-width: 901px) and (max-width: 1024px) {
   .contact {
-    height: 200vh;
+    height: 110vh;
   }
 }
 .contact .contact-container {
@@ -1608,4 +1609,45 @@ body span {
   justify-content: center;
   transition: 1s;
   background: linear-gradient(90deg, rgba(32, 1, 8, 0.6862745098) 0%, #00000C 10.6%);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background: #00000C;
+}
+footer span {
+  color: #00F0FF;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  footer {
+    height: 30vh;
+    display: flex;
+    align-items: flex-start;
+  }
+  footer span {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  footer {
+    height: 20vh;
+    display: flex;
+    align-items: flex-start;
+  }
+  footer span {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 769px) and (max-width: 900px) {
+  footer {
+    height: 20vh;
+    display: flex;
+    align-items: flex-start;
+  }
+  footer span {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
