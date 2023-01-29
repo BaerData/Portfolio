@@ -1737,7 +1737,7 @@ footer {
   height: 10vh;
   background: #00000C;
 }
-footer span {
+footer a {
   color: #00F0FF;
 }
 @media (min-width: 375px) and (max-width: 480px) {
