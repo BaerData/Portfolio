@@ -31,7 +31,11 @@
         
       </nav>
     </header><!-- header - nav -->
-
+    <div class="loading-screen" onload="window">
+      <div class="loading-icon">
+        
+      </div>
+    </div>
     <main class="main">
       <section class="home" id="home"> <!-- section home -->
         <div class="div-wrapper"><!-- div wrapper -->
@@ -250,10 +254,15 @@
       });
       </script>
       <script src="main.js"></script>
-      
     <script
       src="https://kit.fontawesome.com/1910d1b4ce.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.onload = function() {
+      document.querySelector('.loading-screen').classList.remove('loading-screen');
+
+    };
+    </script>
   </body>
 </html>
