@@ -1664,14 +1664,14 @@ body span {
   position: absolute;
   -webkit-animation: pulse_51 750ms ease-in infinite;
           animation: pulse_51 750ms ease-in infinite;
-  border-top: 27px solid #FF003C;
+  border-top: 27px solid #00F0FF;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 0px;
 }
 .loading-screen .triangles .tri.invert {
   border-top: 0px;
-  border-bottom: 27px solid rgba(255, 0, 85, 0.2941176471);
+  border-bottom: 27px solid #00F0FF;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
 }
