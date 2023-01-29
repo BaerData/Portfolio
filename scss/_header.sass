@@ -21,7 +21,7 @@
     width: 100vw
     height: 10vh
     bottom: 0px
-    background: variables.$black-cyberpunk
+    background: variables.$red-glass-cyberpunk
     border: 2px solid variables.$pink2-cyberpunk
   @include mixins.tablet
     @include mixins.headerMobile
@@ -34,12 +34,12 @@
     position: absolute
     top: 20px
     color: variables.$pink2-cyberpunk
+    background: variables.$red-glass-cyberpunk
     padding: 10px 20px
-    // color: variables.$text-color-dark - dark mode
     font-weight: 400
     font-size: 1.5rem
     border: 1px solid variables.$pink2-cyberpunk
-    box-shadow: inset 1px 2px 6px variables.$red-cyberpunk
+    
     
     @include mixins.mobile
       display: none
@@ -51,7 +51,7 @@
     &:hover
       color: variables.$black-cyberpunk
       background: variables.$pink2-cyberpunk
-      border: 2px solid variables.$pink2-cyberpunk
+      border: 1px solid variables.$pink2-cyberpunk
       text-decoration: line-through
      
 
@@ -59,6 +59,7 @@
     ul
       height: 100%
       flex-direction: column
+      background: variables.$red-glass-cyberpunk
       border: 1px solid variables.$pink2-cyberpunk
       box-shadow: inset 1px 2px 6px variables.$red-cyberpunk
       padding: 3rem 10px
@@ -69,17 +70,19 @@
         padding: 1px
         border: none
         box-shadow: none
-
+        background: none
       @include mixins.tablet
         flex-direction: row
         padding: 1px
         border: none
         box-shadow: none
+        background: none
       @include mixins.laptop
         flex-direction: row
         padding: 1px
         border: none
         box-shadow: none
+        background: none
         
       li 
         margin: 2rem

@@ -337,7 +337,7 @@
     -webkit-text-stroke-color: #FF003C;
   }
   100% {
-    color: #791A18;
+    color: rgba(255, 0, 60, 0.1450980392);
     transition: ease 1s;
   }
 }
@@ -349,7 +349,7 @@
     -webkit-text-stroke-color: #FF003C;
   }
   100% {
-    color: #791A18;
+    color: rgba(255, 0, 60, 0.1450980392);
     transition: ease 1s;
   }
 }
@@ -405,14 +405,14 @@
   width: 10vw;
   margin: 0 auto;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .header {
     position: fixed;
     display: flex;
     width: 100vw;
     height: 10vh;
     bottom: 0px;
-    background: #00000C;
+    background: rgba(255, 0, 60, 0.1450980392);
     border: 2px solid #FF003C;
   }
 }
@@ -423,7 +423,7 @@
     width: 100vw;
     height: 10vh;
     bottom: 0px;
-    background: #00000C;
+    background: rgba(255, 0, 60, 0.1450980392);
     border: 2px solid #FF003C;
   }
 }
@@ -434,7 +434,7 @@
     width: 100vw;
     height: 10vh;
     bottom: 0px;
-    background: #00000C;
+    background: rgba(255, 0, 60, 0.1450980392);
     border: 2px solid #FF003C;
   }
 }
@@ -447,13 +447,13 @@
   position: absolute;
   top: 20px;
   color: #FF003C;
+  background: rgba(255, 0, 60, 0.1450980392);
   padding: 10px 20px;
   font-weight: 400;
   font-size: 1.5rem;
   border: 1px solid #FF003C;
-  box-shadow: inset 1px 2px 6px #990101;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .header-brand {
     display: none;
   }
@@ -471,12 +471,13 @@
 .header-brand:hover {
   color: #00000C;
   background: #FF003C;
-  border: 2px solid #FF003C;
+  border: 1px solid #FF003C;
   text-decoration: line-through;
 }
 .header-navbar ul {
   height: 100%;
   flex-direction: column;
+  background: rgba(255, 0, 60, 0.1450980392);
   border: 1px solid #FF003C;
   box-shadow: inset 1px 2px 6px #990101;
   padding: 3rem 10px;
@@ -484,12 +485,13 @@
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .header-navbar ul {
     flex-direction: row;
     padding: 1px;
     border: none;
     box-shadow: none;
+    background: none;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -498,6 +500,7 @@
     padding: 1px;
     border: none;
     box-shadow: none;
+    background: none;
   }
 }
 @media (min-width: 769px) and (max-width: 900px) {
@@ -506,6 +509,7 @@
     padding: 1px;
     border: none;
     box-shadow: none;
+    background: none;
   }
 }
 .header-navbar ul li {
@@ -540,7 +544,7 @@
   grid-template-rows: 1fr;
   gap: 40px;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .home .div-wrapper {
     margin-bottom: 1rem;
   }
@@ -562,7 +566,7 @@
   transition: ease 1s;
   padding: 10px;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .home .div-wrapper .home-wrapper .home-title {
     font-size: 4rem;
   }
@@ -585,7 +589,7 @@
   font-weight: 300;
   font-family: "Kanit", sans-serif;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .home .div-wrapper .home-wrapper .home-subtitle {
     font-size: 2rem;
   }
@@ -642,7 +646,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .home .div-wrapper .app-wrapper {
     position: relative;
     margin-left: 10%;
@@ -661,7 +665,7 @@
   }
 }
 .home .div-wrapper .app-wrapper .player {
-  background: linear-gradient(180deg, #080404 0%, rgba(4, 19, 27, 0.781) 100%);
+  background: linear-gradient(180deg, rgba(48, 0, 14, 0.568627451) 0%, rgba(4, 19, 27, 0.781) 100%);
   border-left: 2px solid #FF003C;
   border-right: 2px solid #FF003C;
   padding: 10px;
@@ -749,7 +753,7 @@
   width: 100%;
   height: 100vh;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .about {
     height: 160vh;
   }
@@ -765,7 +769,7 @@
   justify-content: center;
   gap: 5%;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .about .about-container {
     display: grid;
     grid-template-columns: 2fr;
@@ -801,7 +805,7 @@
   -webkit-clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
           clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .about .about-container .about-content {
     width: 91vw;
     display: flex;
@@ -858,7 +862,7 @@
   color: #000841;
   text-align: left;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .about .about-container .about-content .about-btn .paragraph-page {
     width: 80vw;
   }
@@ -923,7 +927,7 @@
   color: #00F0FF;
   text-shadow: 1px 2px 4px #00F0FF;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .about .about-container .about-tools .title-page-tools {
     font-size: 3rem;
   }
@@ -956,7 +960,7 @@
   width: 100%;
   height: 100vh;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .project {
     height: 250vh;
   }
@@ -986,7 +990,7 @@
   align-items: flex-start;
   gap: 8px;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .project .project-container .project-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -1020,7 +1024,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #080404 0%, rgba(3, 10, 14, 0.781) 80%);
+  background: linear-gradient(180deg, rgba(48, 0, 14, 0.568627451) 0%, rgba(4, 19, 27, 0.781) 100%);
   --curve-size: .9em;
   --border-width: .125em;
   -webkit-clip-path: polygon(-80% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
@@ -1030,7 +1034,7 @@
   border-left: 6px solid #FF003C;
   border-right: 3px solid #FF003C;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .project .project-container .project-content .project-title {
     display: flex;
     justify-content: center;
@@ -1045,7 +1049,7 @@
   -webkit-animation: glitch1 1s infinite, alert 1s infinite;
           animation: glitch1 1s infinite, alert 1s infinite;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .project .project-container .project-content .project-title .title {
     font-size: 2rem;
   }
@@ -1360,7 +1364,7 @@
   background: #FCEE09;
   height: 90vh;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .contact {
     height: 110vh;
     justify-content: center;
@@ -1378,7 +1382,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .contact .contact-container {
     display: flex;
     justify-content: center;
@@ -1414,7 +1418,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .contact .contact-container .contact-title {
     gap: 20px;
     display: flex;
@@ -1455,7 +1459,7 @@
   color: #00000C;
   line-height: 60px;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .contact .contact-container .contact-title .title-contato {
     font-size: 3.4rem;
     text-align: center;
@@ -1489,7 +1493,7 @@
   font-weight: 700;
   color: #00000C;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .contact .contact-container .contact-title h3 {
     font-size: 1rem;
   }
@@ -1509,7 +1513,7 @@
   font-size: 1.8rem;
   color: #FF003C;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   .contact .contact-container .contact-title i {
     font-size: 20px;
   }
@@ -1727,7 +1731,7 @@ body span {
 .main {
   justify-content: center;
   transition: 1s;
-  background: linear-gradient(180deg, #110000 0%, #00000C 10.6%);
+  background: #00000C;
 }
 
 footer {
@@ -1740,7 +1744,7 @@ footer {
 footer a {
   color: #00F0FF;
 }
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 345px) and (max-width: 480px) {
   footer {
     height: 30vh;
     display: flex;
