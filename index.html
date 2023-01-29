@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="Img/b.png"/>
     <link rel="stylesheet" href="scss/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="main.js"></script>
+    
   </head>
   <body>
     <header class="header"><!-- header - nav -->
@@ -32,10 +32,20 @@
         
       </nav>
     </header><!-- header - nav -->
-    <div class="loading-screen" >
-      <div class="loading-icon">
-        
-      </div>
+    <div class="loading-screen" id="loading-screen">
+      
+        <div class="triangles">
+          <div class="tri invert"></div>
+          <div class="tri invert"></div>
+          <div class="tri"></div>
+          <div class="tri invert"></div>
+          <div class="tri invert"></div>
+          <div class="tri"></div>
+          <div class="tri invert"></div>
+          <div class="tri"></div>
+          <div class="tri invert"></div>
+        </div>
+      
     </div>
     <main class="main">
       <section class="home" id="home"> <!-- section home -->
@@ -53,7 +63,7 @@
           <div class="app-wrapper"data-aos="flip-up"><!-- div radio -->
             <div class="player"> <!-- player -->         
               <!-- transições e ações internas do player-->
-                <audio id="music-player" autoplay ></audio>
+                <audio id="music-player" autoplay></audio>
                 <div id="song-image" class="song-img"></div>
                 <div class="song-details">
                     <h2 id="song-title">Lorem ipsum dolor</h2>
@@ -260,10 +270,16 @@
       crossorigin="anonymous"
     ></script>
     <script>
-    //   window.onload = function() {
-    //   document.querySelector('.loading-screen').classList.remove('loading-screen');
-    // }
-    </script>
     
+    const pagePreloader = document.querySelector('#loading-screen');
+    window.addEventListener('load',function() {
+      pagePreloader.classList.add('triangles');
+
+      setTimeout(function() {
+        pagePreloader.style.display = 'none';
+      }, 1000);
+    })
+    </script>
+    <script src="main.js"></script>
   </body>
 </html>

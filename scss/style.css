@@ -370,6 +370,28 @@
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes pulse_51 {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse_51 {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .header {
   flex-direction: column;
   display: flex;
@@ -1622,7 +1644,6 @@ body span {
 }
 
 .loading-screen {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -1631,17 +1652,76 @@ body span {
   background: #00000C;
   z-index: 9999;
 }
-.loading-screen .loading-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.loading-screen .triangles {
   transform: translate(-50%, -50%);
-  width: 36px;
-  height: 36px;
-  background: none;
-  border: 2px solid red;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+  height: 81px;
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.loading-screen .triangles .tri {
+  position: absolute;
+  -webkit-animation: pulse_51 750ms ease-in infinite;
+          animation: pulse_51 750ms ease-in infinite;
+  border-top: 27px solid #FF003C;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 0px;
+}
+.loading-screen .triangles .tri.invert {
+  border-top: 0px;
+  border-bottom: 27px solid rgba(255, 0, 85, 0.2941176471);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+.loading-screen .triangles .tri:nth-child(1) {
+  left: 30px;
+}
+.loading-screen .triangles .tri:nth-child(2) {
+  left: 15px;
+  top: 27px;
+  -webkit-animation-delay: -125ms;
+          animation-delay: -125ms;
+}
+.loading-screen .triangles .tri:nth-child(3) {
+  left: 30px;
+  top: 27px;
+}
+.loading-screen .triangles .tri:nth-child(4) {
+  left: 45px;
+  top: 27px;
+  -webkit-animation-delay: -625ms;
+          animation-delay: -625ms;
+}
+.loading-screen .triangles .tri:nth-child(5) {
+  top: 54px;
+  -webkit-animation-delay: -250ms;
+          animation-delay: -250ms;
+}
+.loading-screen .triangles .tri:nth-child(6) {
+  top: 54px;
+  left: 15px;
+  -webkit-animation-delay: -250ms;
+          animation-delay: -250ms;
+}
+.loading-screen .triangles .tri:nth-child(7) {
+  top: 54px;
+  left: 30px;
+  -webkit-animation-delay: -375ms;
+          animation-delay: -375ms;
+}
+.loading-screen .triangles .tri:nth-child(8) {
+  top: 54px;
+  left: 45px;
+  -webkit-animation-delay: -500ms;
+          animation-delay: -500ms;
+}
+.loading-screen .triangles .tri:nth-child(9) {
+  top: 54px;
+  left: 60px;
+  -webkit-animation-delay: -500ms;
+          animation-delay: -500ms;
 }
 
 .main {
