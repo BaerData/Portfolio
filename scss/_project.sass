@@ -87,18 +87,19 @@
           height: 10rem
           cursor: pointer
           border-left: 7px solid variables.$cyan-cyberpunk
+          border-right: 3px solid variables.$cyan-cyberpunk
           --curve-size: 2em
           --border-width: .125em
-          clip-path: polygon(-110% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
-          filter: contrast(80%) saturate(150%)
-
+          clip-path: polygon(-1010% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%)
+          filter: contrast(85%) saturate(150%) brightness(0.5)
+          
           @include mixins.desktop-large
             width: 16rem
             
           &:hover
             transition: .1s
             scale: (1.033)  
-               
+            
           
           &:nth-child(2)
             
@@ -192,12 +193,11 @@
               font-size: 1.2rem
               padding: 5px
               margin-top: 10px
-              border: 1px solid variables.$title-color
+              border: none
               border-radius: 100%
               
               
               &:hover
-                background: variables.$pink2-cyberpunk
-                border: 1px solid variables.$cyan-cyberpunk
-                color: variables.$buttom-letter-color
+                background: none
+                color: variables.$cyan-cyberpunk
                  

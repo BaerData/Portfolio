@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 @-webkit-keyframes borderOf {
   0% {
     outline: 1px double #FF003C;
@@ -451,7 +450,7 @@
   padding: 10px 20px;
   font-weight: 400;
   font-size: 1.5rem;
-  border: 2px solid #FF003C;
+  border: 1px solid #FF003C;
   box-shadow: inset 1px 2px 6px #990101;
 }
 @media (min-width: 375px) and (max-width: 480px) {
@@ -478,7 +477,7 @@
 .header-navbar ul {
   height: 100%;
   flex-direction: column;
-  border: 2px solid #FF003C;
+  border: 1px solid #FF003C;
   box-shadow: inset 1px 2px 6px #990101;
   padding: 3rem 10px;
   display: flex;
@@ -522,9 +521,9 @@
   transform: scale(1.14);
   transition: 0.6s ease;
   color: #FCEE09;
-  text-shadow: 1px 1px 3px #ffbb00;
+  text-shadow: 1px 1px 3px #ebac01;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #00000C;
+  -webkit-text-stroke-color: #ebac01;
 }
 
 .home {
@@ -561,6 +560,7 @@
   font-weight: 900;
   cursor: pointer;
   transition: ease 1s;
+  padding: 10px;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .home .div-wrapper .home-wrapper .home-title {
@@ -792,8 +792,8 @@
   justify-content: center;
   flex-direction: row;
   background: #FCEE09;
-  border: 1px solid #ffbb00;
-  box-shadow: 1px 1px 10px #ffbb00;
+  border: 1px solid #ebac01;
+  box-shadow: 1px 1px 10px #ebac01;
   width: 45vw;
   padding: 5pc;
   gap: 5rem;
@@ -886,7 +886,7 @@
           clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
 }
 .about .about-container .about-content .about-btn .btn-cv:hover {
-  background: #ffbb00;
+  background: #ebac01;
   color: #00000C;
   border: 1px solid #000841;
   font-weight: 500;
@@ -905,7 +905,7 @@
   border-radius: 100%;
 }
 .about .about-container .about-content .about-btn .about-socials i:hover {
-  background: #ffbb00;
+  background: #ebac01;
   color: #000841;
 }
 .about .about-container .about-tools {
@@ -1065,11 +1065,12 @@
   height: 10rem;
   cursor: pointer;
   border-left: 7px solid #00F0FF;
+  border-right: 3px solid #00F0FF;
   --curve-size: 2em;
   --border-width: .125em;
-  -webkit-clip-path: polygon(-110% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
-          clip-path: polygon(-110% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
-  filter: contrast(80%) saturate(150%);
+  -webkit-clip-path: polygon(-1010% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
+          clip-path: polygon(-1010% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
+  filter: contrast(85%) saturate(150%) brightness(0.5);
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .project .project-container .project-content .project-card {
@@ -1342,13 +1343,12 @@
   font-size: 1.2rem;
   padding: 5px;
   margin-top: 10px;
-  border: 1px solid #313131;
+  border: none;
   border-radius: 100%;
 }
 .project .project-container .project-content .project-card .link-project i:hover {
-  background: #FF003C;
-  border: 1px solid #00F0FF;
-  color: #f7f7f7;
+  background: none;
+  color: #00F0FF;
 }
 
 .contact {
@@ -1664,14 +1664,14 @@ body span {
   position: absolute;
   -webkit-animation: pulse_51 750ms ease-in infinite;
           animation: pulse_51 750ms ease-in infinite;
-  border-top: 27px solid #00F0FF;
+  border-top: 27px solid #FF003C;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 0px;
 }
 .loading-screen .triangles .tri.invert {
   border-top: 0px;
-  border-bottom: 27px solid #00F0FF;
+  border-bottom: 27px solid #FF003C;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
 }
@@ -1727,7 +1727,7 @@ body span {
 .main {
   justify-content: center;
   transition: 1s;
-  background: linear-gradient(90deg, rgba(32, 1, 8, 0.6862745098) 0%, #00000C 10.6%);
+  background: linear-gradient(180deg, #110000 0%, #00000C 10.6%);
 }
 
 footer {
