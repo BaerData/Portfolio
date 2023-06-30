@@ -38,7 +38,7 @@
             cursor: pointer
             transition: ease 1s
             padding: 10px
-            animation: letterNeon 0.3s loop 
+            // animation: letterNeon  infinite 1s
             @include mixins.mobile
                font-size: 4rem
 
@@ -47,7 +47,20 @@
 
             .letterNeon
                color: variables.$yellow-cyberpunk
+               
 
+               &:nth-of-type(1)
+                 animation: letterNeon 3.09s infinite 
+               &:nth-of-type(2)
+                 animation: letterNeon 3.10s infinite 
+               &:nth-of-type(3)
+                 animation: letterNeon 3.11s infinite 
+               &:nth-of-type(4)
+                 animation: letterNeon 3.12s infinite 
+               &:nth-of-type(5)
+                 animation: letterNeon 3.13s infinite 
+               &:nth-of-type(6)
+                 animation: letterNeon 3.14s infinite 
                &:hover
                  animation: letterNeon 0.3s forwards
 

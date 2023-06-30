@@ -142,7 +142,7 @@
   }
 }
 @keyframes letterNeon {
-  0% {
+  10% {
     color: #FCEE09;
     text-shadow: 1px 10px 1px #00F0FF;
     -webkit-text-stroke-width: 1px;
@@ -155,7 +155,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #00ff6a;
   }
-  100% {
+  60% {
     color: #00000C;
     opacity: 2;
     transition: ease 1s;
@@ -369,7 +369,6 @@
   cursor: pointer;
   transition: ease 1s;
   padding: 10px;
-  animation: letterNeon 0.3s loop;
 }
 @media (min-width: 345px) and (max-width: 480px) {
   .home .div-wrapper .home-wrapper .home-title {
@@ -383,6 +382,24 @@
 }
 .home .div-wrapper .home-wrapper .home-title .letterNeon {
   color: #FCEE09;
+}
+.home .div-wrapper .home-wrapper .home-title .letterNeon:nth-of-type(1) {
+  animation: letterNeon 3.09s infinite;
+}
+.home .div-wrapper .home-wrapper .home-title .letterNeon:nth-of-type(2) {
+  animation: letterNeon 3.1s infinite;
+}
+.home .div-wrapper .home-wrapper .home-title .letterNeon:nth-of-type(3) {
+  animation: letterNeon 3.11s infinite;
+}
+.home .div-wrapper .home-wrapper .home-title .letterNeon:nth-of-type(4) {
+  animation: letterNeon 3.12s infinite;
+}
+.home .div-wrapper .home-wrapper .home-title .letterNeon:nth-of-type(5) {
+  animation: letterNeon 3.13s infinite;
+}
+.home .div-wrapper .home-wrapper .home-title .letterNeon:nth-of-type(6) {
+  animation: letterNeon 3.14s infinite;
 }
 .home .div-wrapper .home-wrapper .home-title .letterNeon:hover {
   animation: letterNeon 0.3s forwards;
