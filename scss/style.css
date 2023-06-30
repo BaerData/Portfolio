@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
 @keyframes borderOf {
   0% {
-    outline: 1px double #FF003C;
+    outline: 1px double #ff0062;
   }
   50% {
-    outline: 7px double #FF003C;
+    outline: 7px double #ff0062;
   }
   100% {
-    outline: 1px double #FF003C;
+    outline: 1px double #ff0062;
   }
 }
 @keyframes alert {
@@ -15,7 +15,7 @@
     color: #00000C;
   }
   50% {
-    color: #FF003C;
+    color: #ff0062;
     opacity: 2;
   }
   100% {
@@ -27,7 +27,7 @@
     background: #267a80;
   }
   50% {
-    background: #FF003C;
+    background: #ff0062;
   }
   100% {
     background: rgba(255, 0, 85, 0.2941176471);
@@ -166,10 +166,10 @@
 }
 @keyframes letterNeon2 {
   0% {
-    text-shadow: 0px 2px 54px #FF003C;
+    text-shadow: 0px 2px 54px #ff0062;
     color: #000016;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #FF003C;
+    -webkit-text-stroke-color: #ff0062;
   }
   100% {
     color: rgba(255, 0, 60, 0.1450980392);
@@ -217,7 +217,7 @@
     height: 10vh;
     bottom: 0px;
     background: rgba(255, 0, 60, 0.1450980392);
-    border: 2px solid #FF003C;
+    border: 2px solid #ff0062;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -228,7 +228,7 @@
     height: 10vh;
     bottom: 0px;
     background: rgba(255, 0, 60, 0.1450980392);
-    border: 2px solid #FF003C;
+    border: 2px solid #ff0062;
   }
 }
 @media (min-width: 769px) and (max-width: 900px) {
@@ -239,7 +239,7 @@
     height: 10vh;
     bottom: 0px;
     background: rgba(255, 0, 60, 0.1450980392);
-    border: 2px solid #FF003C;
+    border: 2px solid #ff0062;
   }
 }
 @media (min-width: 901px) and (max-width: 1024px) {
@@ -250,12 +250,12 @@
 .header-brand {
   position: absolute;
   top: 20px;
-  color: #FF003C;
+  color: #ff0062;
   background: rgba(255, 0, 60, 0.1450980392);
   padding: 10px 20px;
   font-weight: 400;
   font-size: 1.5rem;
-  border: 1px solid #FF003C;
+  border: 1px solid #ff0062;
 }
 @media (min-width: 345px) and (max-width: 480px) {
   .header-brand {
@@ -274,15 +274,15 @@
 }
 .header-brand:hover {
   color: #00000C;
-  background: #FF003C;
-  border: 1px solid #FF003C;
+  background: #ff0062;
+  border: 1px solid #ff0062;
   text-decoration: line-through;
 }
 .header-navbar ul {
   height: 100%;
   flex-direction: column;
   background: rgba(255, 0, 60, 0.1450980392);
-  border: 1px solid #FF003C;
+  border: 1px solid #ff0062;
   box-shadow: inset 1px 2px 6px #990101;
   padding: 3rem 10px;
   display: flex;
@@ -323,7 +323,7 @@
 .header-navbar ul li i {
   cursor: pointer;
   transition: 0.8s;
-  color: #FF003C;
+  color: #ff0062;
 }
 .header-navbar ul li i:hover {
   transform: scale(1.14);
@@ -363,12 +363,13 @@
   font-size: 9rem;
   font-style: italic;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FF003C;
-  text-shadow: 0px 2px 1px rgba(255, 0, 85, 0.2941176471);
+  -webkit-text-stroke-color: #FCEE09;
+  text-shadow: -5px 10px 1px #00F0FF;
   font-weight: 900;
   cursor: pointer;
   transition: ease 1s;
   padding: 10px;
+  animation: letterNeon 0.3s loop;
 }
 @media (min-width: 345px) and (max-width: 480px) {
   .home .div-wrapper .home-wrapper .home-title {
@@ -381,10 +382,10 @@
   }
 }
 .home .div-wrapper .home-wrapper .home-title .letterNeon {
-  color: #00000C;
+  color: #FCEE09;
 }
 .home .div-wrapper .home-wrapper .home-title .letterNeon:hover {
-  animation: letterNeon 1s forwards;
+  animation: letterNeon 0.3s forwards;
 }
 .home .div-wrapper .home-wrapper .home-subtitle {
   font-size: 4rem;
@@ -398,12 +399,12 @@
   }
 }
 .home .div-wrapper .home-wrapper .home-subtitle .letterNeon {
-  color: #FF003C;
+  color: #ff0062;
   text-shadow: 0px 2px 30px #990101;
 }
 .home .div-wrapper .home-wrapper .home-subtitle .letterNeon:hover {
   color: black;
-  background-color: #FF003C;
+  background-color: #ff0062;
   transition: none;
 }
 .home .div-wrapper .home-wrapper .text {
@@ -424,17 +425,17 @@
   height: 55px;
   border: none;
   background: #00000C;
-  color: #FF003C;
-  border: 1px solid #FF003C;
+  color: #ff0062;
+  border: 1px solid #ff0062;
   text-align: center;
   cursor: pointer;
 }
 .home .div-wrapper .home-wrapper .home-btn:hover {
   width: 200px;
   transition: 0.2s;
-  background: #FF003C;
+  background: #ff0062;
   color: #00000C;
-  border: 1px inset #FF003C;
+  border: 1px inset #ff0062;
   --curve-size: .5em;
   --border-width: .125em;
   -webkit-clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
@@ -468,8 +469,8 @@
 }
 .home .div-wrapper .app-wrapper .player {
   background: linear-gradient(180deg, rgba(48, 0, 14, 0.568627451) 0%, rgba(4, 19, 27, 0.781) 100%);
-  border-left: 2px solid #FF003C;
-  border-right: 2px solid #FF003C;
+  border-left: 2px solid #ff0062;
+  border-right: 2px solid #ff0062;
   padding: 10px;
   width: 324px;
   max-width: 100%;
@@ -485,13 +486,13 @@
 .home .div-wrapper .app-wrapper .player .song-details h2 {
   font-size: 24px;
   font-weight: 600;
-  color: #FF003C;
+  color: #ff0062;
   margin-bottom: 5px;
 }
 .home .div-wrapper .app-wrapper .player .song-details h2 h3 {
   font-size: 16px;
   font-weight: 500;
-  color: #FF003C;
+  color: #ff0062;
 }
 .home .div-wrapper .app-wrapper .player .player-controls {
   display: flex;
@@ -532,8 +533,8 @@
   box-shadow: 0px 2px 10px #00F0FF;
 }
 .home .div-wrapper .app-wrapper .player .next-up p {
-  color: #FF003C;
-  text-shadow: 0px 1px 3px #FF003C;
+  color: #ff0062;
+  text-shadow: 0px 1px 3px #ff0062;
   font-size: 0.8rem;
 }
 .home .div-wrapper .app-wrapper .player .next-up span {
@@ -725,8 +726,8 @@
   text-align: start;
   font-size: 4rem;
   rotate: 90deg;
-  -webkit-text-decoration: line-through 4px solid #FF003C;
-          text-decoration: line-through 4px solid #FF003C;
+  -webkit-text-decoration: line-through 4px solid #ff0062;
+          text-decoration: line-through 4px solid #ff0062;
   color: #00F0FF;
   text-shadow: 1px 2px 4px #00F0FF;
 }
@@ -753,7 +754,7 @@
 }
 .about .about-container .about-tools-card .tools:hover {
   background: linear-gradient(180deg, rgba(0, 54, 56, 0.911) 0%, rgba(0, 54, 56, 0.411) 100%);
-  color: #FF003C;
+  color: #ff0062;
 }
 
 .project {
@@ -832,10 +833,10 @@
   --border-width: .125em;
   -webkit-clip-path: polygon(-80% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
           clip-path: polygon(-80% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
-  box-shadow: 2px 5px 10px #FF003C;
+  box-shadow: 2px 5px 10px #ff0062;
   height: 60px;
-  border-left: 6px solid #FF003C;
-  border-right: 3px solid #FF003C;
+  border-left: 6px solid #ff0062;
+  border-right: 3px solid #ff0062;
 }
 @media (min-width: 345px) and (max-width: 480px) {
   .project .project-container .project-content .project-title {
@@ -848,7 +849,7 @@
   margin: 10px;
   font-size: 1.7rem;
   font-weight: 400;
-  color: #FF003C;
+  color: #ff0062;
   animation: glitch1 1s infinite, alert 1s infinite;
 }
 @media (min-width: 345px) and (max-width: 480px) {
@@ -1136,7 +1137,7 @@
   height: 15rem;
 }
 .project .project-container .project-content .project-card .link-project i {
-  color: #FF003C;
+  color: #ff0062;
   font-size: 1.2rem;
   padding: 5px;
   margin-top: 10px;
@@ -1304,7 +1305,7 @@
 .contact .contact-container .contact-title i {
   margin-right: 6px;
   font-size: 1.8rem;
-  color: #FF003C;
+  color: #ff0062;
 }
 @media (min-width: 345px) and (max-width: 480px) {
   .contact .contact-container .contact-title i {
@@ -1386,11 +1387,11 @@
   text-decoration: none;
 }
 *::-moz-selection {
-  background-color: #FF003C;
+  background-color: #ff0062;
   color: #00F0FF;
 }
 *::selection {
-  background-color: #FF003C;
+  background-color: #ff0062;
   color: #00F0FF;
 }
 
@@ -1449,14 +1450,14 @@ body span {
 .loading-screen .triangles .tri {
   position: absolute;
   animation: pulse_51 750ms ease-in infinite;
-  border-top: 27px solid #FF003C;
+  border-top: 27px solid #ff0062;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 0px;
 }
 .loading-screen .triangles .tri.invert {
   border-top: 0px;
-  border-bottom: 27px solid #FF003C;
+  border-bottom: 27px solid #ff0062;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
 }

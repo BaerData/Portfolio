@@ -32,12 +32,13 @@
             font-size: 9rem
             font-style: italic
             -webkit-text-stroke-width: 1px
-            -webkit-text-stroke-color: variables.$pink2-cyberpunk
-            text-shadow: 0px 2px 1px variables.$alert-cyberpunk
+            -webkit-text-stroke-color: variables.$yellow-cyberpunk
+            text-shadow: -5px 10px 1px variables.$cyan-cyberpunk
             font-weight: 900 
             cursor: pointer
             transition: ease 1s
             padding: 10px
+            animation: letterNeon 0.3s loop 
             @include mixins.mobile
                font-size: 4rem
 
@@ -45,10 +46,10 @@
                font-size: 5rem
 
             .letterNeon
-               color: variables.$black-cyberpunk
+               color: variables.$yellow-cyberpunk
 
                &:hover
-                 animation: letterNeon 1s forwards
+                 animation: letterNeon 0.3s forwards
 
 
          .home-subtitle
